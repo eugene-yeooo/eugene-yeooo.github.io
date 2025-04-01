@@ -14,8 +14,9 @@ h1 {
 main {
   font-family: 'Changa', sans-serif;
   display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   position: relative;
-  padding-bottom: 10rem;
 }
 
 nav {
@@ -39,6 +40,7 @@ h2 {
   padding-top: 0px;
   position: absolute;
   left: 300px;
+  flex-grow: 1;
 }
 
 .paragraphHeader {
@@ -54,17 +56,16 @@ p {
   font-family: 'Special Elite', monospace;
   width: 100%;
   text-align: center;
-  position: absolute;
-  padding-top: 2rem;
+  position: ;
 }
 
-/*@media only screen and (max-width: 750px) {
+/* @media only screen and (max-width: 750px) {
   main {
-    flex-wrap: wrap;
+    display: block;
   }
 
   .mainText {
     width: 100%;
     flex: 750px;
   }
-}
+} */
