@@ -1,5 +1,7 @@
 body {
   background-color: rgb(24, 152, 152);
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
 img {
@@ -45,4 +47,6 @@ p {
 
 footer {
   font-family: 'Special Elite', monospace;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
