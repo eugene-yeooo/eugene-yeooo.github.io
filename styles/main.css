@@ -18,8 +18,7 @@ main {
   font-family: 'Changa', sans-serif;
   display: flex;
   position: relative;
-  justify-content: space-between;
-  padding-bottom: 4rem;
+  padding-bottom: 10rem;
 }
 
 nav {
@@ -30,13 +29,13 @@ nav {
   position: relative;
 }
 
+h2 {
+  font-family: 'Special Elite', system-ui;
+}
+
 .list {
   list-style: none;
   padding: 0px;
-}
-
-h2 {
-  font-family: 'Special Elite', system-ui;
 }
 
 .mainText {
@@ -60,4 +59,15 @@ p {
   text-align: center;
   position: absolute;
   padding-top: 1rem;
+}
+
+@media only screen and (max-width: 750px) {
+ /* main {
+    flex-wrap: wrap;
+  }
+
+  .mainText {
+    width: 100%;
+    flex: 750px;
+  }
 }
