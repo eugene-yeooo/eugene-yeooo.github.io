@@ -1,0 +1,48 @@
+body {
+  background-color: rgb(24, 152, 152);
+}
+
+img {
+}
+
+h1 {
+  font-size: 3em;
+  font-family: 'Special Elite', system-ui;
+  text-align: center;
+}
+
+main {
+  font-family: 'Changa', sans-serif;
+}
+
+nav {
+  background-color: rgb(178, 230, 230);
+  width: max-content;
+
+  padding: 10px 30px;
+  border-radius: 5%;
+}
+
+.list {
+  list-style: none;
+}
+
+h2 {
+  font-family: 'Special Elite', system-ui;
+}
+
+.mainText {
+}
+
+.paragraphHeader {
+  font-family: 'Russo One', sans-serif;
+  font-weight: 100;
+}
+
+p {
+  line-height: 120%;
+}
+
+footer {
+  font-family: 'Special Elite', monospace;
+}
