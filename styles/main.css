@@ -84,6 +84,7 @@ p {
 .blogSubtitle {
   font-family: 'Changa', sans-serif;
   margin-top: 0.5rem;
+  font-weight: 600;
 }
 
 .blogIntro {
@@ -95,6 +96,12 @@ p {
   font-family: 'Changa', sans-serif;
   font-weight: 500;
   font-size: 1.5rem;
+}
+
+.blogFooter {
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
 }
 
 /* @media only screen and (max-width: 750px) {
