@@ -21,7 +21,6 @@ h1 {
 }
 
 .flexColumn {
-  font-family: 'Changa', sans-serif;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -42,6 +41,7 @@ h2 {
 .list {
   list-style: none;
   padding: 0px;
+  font-family: 'Changa', sans-serif;
 }
 
 .mainText {
@@ -57,6 +57,7 @@ h2 {
 }
 
 p {
+  font-family: 'Changa', sans-serif;
   line-height: 120%;
 }
 
@@ -76,6 +77,10 @@ p {
 .blogSubtitle {
   font-family: 'Changa', sans-serif;
   margin-top: 0.5rem;
+}
+
+.blogIntro {
+  margin-top: 4rem;
 }
 
 /* @media only screen and (max-width: 750px) {
