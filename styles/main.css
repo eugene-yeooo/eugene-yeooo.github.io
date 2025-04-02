@@ -60,6 +60,11 @@ p {
   line-height: 120%;
 }
 
+.homeLink {
+  text-decoration: none;
+  color: black;
+}
+
 .blogTitle {
   font-family: 'Russo One', sans-serif;
   font-weight: 100;
