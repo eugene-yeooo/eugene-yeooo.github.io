@@ -24,12 +24,11 @@
     </h2>
     <h3 class="blogSubtitle">2 April 2025</h3>
 
-    <div class="blogIntro">
-      <p>The 'position' property in CSS is one of the most important properties in web design. Working with the left, right, bottom, top and z-index properties, it defines the position of a given element in a document, and is ultimately used to design the layout of webpage (i.e. what the end user sees).</p>
-      <p>For CSS beginners, it can be quite confusing and hard to understand the difference between three of the most common position property options: relative, absolute and fixed. Here is a quick overview of them:</p>
-    </div>
-
     <article>
+      <div class="blogIntro">
+        <p>The 'position' property in CSS is one of the most important properties in web design. Working with the left, right, bottom, top and/or z-index properties, it defines the position of elements on a document, and is ultimately used to design the layout of webpages (i.e. what the end user sees).</p>
+        <p>For CSS beginners, it can be quite confusing and hard to understand the difference between three of the most common position property options: relative, absolute and fixed. Here is a quick overview of them:</p>
+      </div>
       <div>
         <h3 class="technicalSubHeading">position: relative;</h3>
         <p>When set to 'relative', elements are moved away from its default (static) position on the page. Adjustments can be made with the left, right, top and bottom properties to define its new position exactly.
@@ -38,18 +37,27 @@
         These elements still remain in the normal flow of the document, and other content will not adjust to fit in any gaps left by the relative-positioned element.
         </p>
         <!-- <img> -->
+      </div>
+      <div>
         <!-- <img> -->
         <br>
         <h3 class="technicalSubHeading">position: absolute;</h3>
-        <p>With the 'absolute' position property, elements are positioned
+        <p>With the 'absolute' position property, elements are positioned relative to their parent element/nearest positined ancestor. The parent element will need to also have a position value asigned other than static (the default).
         <br>
         <br>
-        Notably, these elements are removed from the flow of the document.
+        Notably, these elements are removed from the flow of the document. This means that no space is created for this element in the, and it is ignored by other elemets (i.e. other elements will behave as if this elelment is not in the document). 
         </p>
+        <br>
+      </div>
+      <div>
+        <h3 class="technicalSubHeading">position: fixed;</h3>
+        <p>The 'fixed' position property also removes an element from the normal flow of the document. However, unlike 'absolute', they are positioned relative to the html element. A fixed element does not leave a gap on the page where it would have statically occupied.</p>
+      
+        <p>This means that these elements are not affected by scrolling, and will always stay in the same position on the viewport or screen.</p>
       </div>
     </article>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <p>© Eugene's Blog 2025</p>
-    </footer> -->
+    </footer>
   </body>
 </html>
