@@ -70,7 +70,7 @@ p {
 }
 
 #mindBlown {
-  display: inline-flex;
+  displa
 }
 
 .blogTitle {
@@ -151,15 +151,16 @@ p {
   }
 
   #codeImg {
-    width: 280%;
+    width: 100%;
     height: auto;
+    display: block;
   }
 
   #mindBlown {
-    margin-top: 15rem;
-    margin-left: 8rem;
     width: 100%;
     height: auto;
+    display: block;
+    margin-top: 0.3rem;
   }
 }
 /* 
