@@ -70,6 +70,17 @@ p {
   color: black;
 }
 
+.imgColumn {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  display: table;
+}
+
+#mindBlown {
+  margin-top: 6.7rem;
+}
+
 .blogTitle {
   font-family: 'Russo One', sans-serif;
   font-weight: 100;
@@ -131,5 +142,14 @@ p {
 
   .mainText {
     padding-right: 2.5rem;
+  }
+
+  #codeImg {
+    width: 280%;
+    height: auto;
+  }
+
+  #mindBlown {
+    margin-top: 0px;
   }
 }
