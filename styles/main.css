@@ -162,18 +162,17 @@ p {
     display: block;
     margin-top: 0.3rem;
   }
-}
-/* 
-@media only screen and (min-width: 751px) (max-width: 1260px) {
-  #codeImg {
-    width: 150%;
-    height: auto;
-  }
 
-  #mindBlown {
-    width: 100%;
+  .positionsImg {
+    max-width: 100%;
+    display: block;
     height: auto;
-    margin-top: 5.7rem;
-    margin-left: 8rem;
   }
-} */
+  
+  #positionsImg-static {
+    max-width: 100%;
+    display: block;
+    height: auto;
+  }
+  }
+}
