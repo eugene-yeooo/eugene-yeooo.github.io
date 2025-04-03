@@ -24,6 +24,7 @@ h1 {
   display: flex;
   flex-direction: row;
   min-height: 75vh;
+  justify-content: space-between;
 }
 
 nav {
@@ -43,7 +44,7 @@ h2 {
   font-family: 'Changa', sans-serif;
 }
 
-.list {
+.navList {
   list-style: none;
   padding: 0px;
   font-family: 'Changa', sans-serif;
@@ -102,6 +103,19 @@ p {
 .positionsImg {
   max-height: fit-content;
   margin-top: 2rem;
+}
+
+.listTitle {
+  font-family: 'Changa', sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.blogList {
+  list-style: none;
+  padding: 0px;
+  font-family: 'Changa', sans-serif;
+  margin-right: 2rem;
 }
 
 .blogFooter {
