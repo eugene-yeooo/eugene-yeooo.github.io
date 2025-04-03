@@ -69,15 +69,8 @@ p {
   color: black;
 }
 
-.imgColumn {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-  display: table;
-}
-
 #mindBlown {
-  margin-top: 5.4rem;
+  display: inline-flex;
 }
 
 .blogTitle {
