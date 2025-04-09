@@ -69,10 +69,6 @@ p {
   color: black;
 }
 
-#mindBlown {
-  displa
-}
-
 .blogTitle {
   font-family: 'Russo One', sans-serif;
   font-weight: 100;
@@ -178,11 +174,10 @@ figcaption {
     height: auto;
     margin: auto;
   }
-  
+
   #positionsImg-static {
     max-width: 100%;
     display: block;
     height: auto;
-  }
   }
 }
