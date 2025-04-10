@@ -54,7 +54,7 @@
       <p style="text-align: center;">--------</p>
       <p>An <code>object</code> is basically, well, an object, that has properties about it. These properties are listed as key-value pairs, and the order they are listed does not matter. You can label/name each key however you like. Here is a syntax example:</p>
       <!-- <div style="display: block; margin: auto"> -->
-        <code>let curlyFries = {<br>&nbsp;&nbsp;price: 8;<br>&nbsp;&nbsp;stock: 19;<br>&nbsp;&nbsp;calories: "530kcal";<br>&nbsp;health-rating: "5 stars"<br>}</code>
+        <code>let curlyFries = {<br>&nbsp;&nbsp;price: 8;<br>&nbsp;&nbsp;stock: 19;<br>&nbsp;&nbsp;calories: "530kcal";<br>&nbsp;&nbsp;health-rating: "5 stars"<br>}</code>
       <!-- </div> -->
       <p>To access data in an object, 'dot notation' is best practice - for example: <code>console.log(curlyFries.calories)</code></p>
       <p style="text-align: center;">--------</p>
@@ -67,7 +67,13 @@
       <p>Another fun difference between objects and arrays is the way you loop them - for objects you use the <code>for...in</code> loop, and for arrays you use the <code>for...of</code> loop (unless looping by index).</p>
       <br>
       <h3 class="paragraphHeader">Explain what <code>functions</code> are and why they are helpful:</h3>
-      <p></p>
+      <p>Functions are basically blocks of code that perform a specific task. They are reusable and be called upon multiple times in the script whenever you need them, saving you time from needing to repeat the same code over and over. Here is a syntax example:</p>
+      <code>function sum(number1, number2) {<br>&nbsp;&nbsp;return number1 + number2;<br>}</code>
+      <p>In this example, 'sum' is the name of the function (you can name it anything you like), number1 & 2 in the brackets are the parameters being fed into the function (also named however you like), and 'return' is the meat of the function that defines adding those two parameters together. To call this function, you can use <code>console.log(sum(5, 12))</code>.</p>
+      <p>Here's another example using the 'button' context from question 3 above - notice how no parameters are needed here:</p>
+      <code>function changeButtonText() {<br>&nbsp;&nbsp;document.getElementByID('button').innerHTML = 'You clicked on me!';<br>}</code>
+      <p>You can then script an event handler DOM method to call this function: <code>document.getElementById('Button').onclick = changeButtonText</code> or <code>document.getElementById('Button').addEventListener('click', changeButtonText)</code></p>
+      <p>In other cases where you simply need to call the function immediately instead of embedding it in another DOM workflow or console logging it, you can simply script the name of the function followed by brackets, for example: <code>displayShoppingList()</code></p>
       <br>
     </article>
     <footer class="blogFooter">
