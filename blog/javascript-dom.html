@@ -29,16 +29,44 @@
       <p>In fact, JavaScript can also be thought of the appliances and smart home devices that people interact with in the home!</p>
       <br>
       <h3 class="paragraphHeader">Explain <code>control flow</code> and <code>loops</code> using an example process from everyday life:</h3>
-      <p>In JavaScript, <code>control flow</code> is the order in which instructions are carried out for interacting with a webpage. Its script usually runs top to bottom, but with <code>control flow</code> statements, you can manipulate the order of instructions - <code>loops</code> are a common example of such statements.</p>
-      <p>Take the process of driving as an analogy from everyday life - when you first get in the driver's seat, your <code>control flow</code></p> could involve indicating if you need to pull out of a parking spot onto the road, or turning on your headlights if it's dark out, or turning on the wipers if it's raining. As you're driving, you should be <code>looping</code> the process of checking your mirrors, adjusting the wheel to stay in your lane, tapping the pedals to stay within an appropriate speed, and paying attention to potential hazards such as other vehicles or pedestrians.
+      <p>In JavaScript, control flow is the order in which instructions are carried out for interacting with a webpage. Its script usually runs top to bottom, but with control flow statements, you can manipulate the order of JavaScript instructions - loops are a common example of such statements.</p>
+      <p>Take the process of driving as an everyday life analogy - when you first get in the driver's seat, your <code>control flow</code> could involve indicating if you need to pull out of a parking spot onto the road, or turning on your headlights if it's dark out, or turning on the wipers if it's raining.</p>
+      <p>As you're driving, you should be <code>looping</code> the process of checking your mirrors, adjusting the wheel to stay in your lane, tapping the pedals to stay within an appropriate speed, and paying attention to potential hazards such as other vehicles or pedestrians.</p>
       <br>
-      <h3 class="paragraphHeader"></h3>
-      <p></p>
+      <h3 class="paragraphHeader">Describe what the DOM is and an example of how you might interact with it:</h3>
+      <p>The DOM (short of Document Object Model) is a programming user interface that provides a object-oriented representation of a webpage and is used to manipulate web documents. Web browsers construct the DOM when it loads an HTML document, and structures all its elements as 'objects' in a tree-like representation.</p>
+      <p>The DOM allows you to modify the structure, style and content of a document, and most importantly, facilitates the scripting of user interactions using JavaScript, which allows for changes on a webpage to take place without needing to reload the page.</p>
+      <p>To access the DOM, you simply need to input a DOM access method wherever you're doing your scripting, (e.g. in a .js file with a code editor, in a browser's DevTools console, etc.). Here are some common examples of DOM access methods:</p>
+      <code>getElementByClassName</code>
+      <code>getElementByTagName</code>
+      <code>querySelector</code>
+      <code>querySelectorAll</code>
+      <p>The fundamental concept of using the DOM is simple: you call upon an object of the webpage, then you apply a DOM 'method(s)' to enact the change or manipulation you intend. An example would be to change the text of a button on a webpage after a user has clicked on it - here is a snippet of code you can use to interact with the DOM:</p>
+      <code>document.getElementByID('button').innerHTML = 'You clicked on me!'</code>
+      <p>Let's break down the code:</p>
+      <p><code>document</code> 👉 calls the overarching parent object, i.e. the HTML document itself. You always start with 'document' object.</p>
+      <p><code>.getElementByID()</code> 👉 is the DOM method to single out an object by referencing its assigned HTML ID. In this case, we've selected the HTML element with the ID='button'</p>
+      <p><code>.innerHTML</code> 👉 is the DOM method to change the content of the HTML element we've singled out. Along with the syntax of the equal symbol and quotation marks to denote a string, this changes the text on the button to 'You clicked on me!'</p>
+      <p>It's worth noting, however, that the solution provided for this example has been simplified to demonstrate interacting with the DOM. In reality, to actually make this work, you will also need to create a <code>function</code> that enacts the code above, and script a DOM method that detects someone clicking the button (either the <code>.addEventListener</code> or <code>.onclick</code> method) and activates the <code>function</code>. But more on this later!</p>
       <br>
-      <h3 class="paragraphHeader"></h3>
-      <p></p>
+      <h3 class="paragraphHeader">Explain the difference between accessing data from <code>arrays</code> and <code>objects</code>:</h3>
+      <p>Arrays and objects are both vessels in JavaScript for storing information and data. They can both store multiple values and can have data added, removed, or altered later. They are both loopable, can be nested within each other, and can contain more of themselves. However, they differ fundamentally in the nature of data they are designed to contain.</p>
+      <p style="text-align: center;">--------</p>
+      <p>An <code>object</code> is basically, well, an object, that has properties about it. These properties are listed as key-value pairs, and the order they are listed does not matter. You can label/name each key however you like. Here is a syntax example:</p>
+      <!-- <div style="display: block; margin: auto"> -->
+        <code>let curlyFries = {<br>&nbsp;&nbsp;price: 8;<br>&nbsp;&nbsp;stock: 19;<br>&nbsp;&nbsp;calories: "530kcal";<br>&nbsp;health-rating: "5 stars"<br>}</code>
+      <!-- </div> -->
+      <p>To access data in an object, 'dot notation' is best practice - for example: <code>console.log(curlyFries.calories)</code></p>
+      <p style="text-align: center;">--------</p>
+      <p>An <code>array</code> is basically an ordered list. It is a collection of items that are listed in a specific, indexed order. Here is a syntax example:</p>
+      <!-- <div style="text-align: center;"> -->
+        <code>let customerOrder = ['Iced Mocha', 'Curly Fries', 'Scrambled Eggs', 'Caramel Slice']</code>
+      <!-- </div> -->
+      <p>To access data in an array, use brackets selecting the index position of the item you are after. Notably, arrays are zero-based, i.e. the first item is 0 and the third item is 2. For example: <code>console.log(customerOrder[3])</code> prints 'Caramel Slice'.</p>
+      <p style="text-align: center;">--------</p>
+      <p>Another fun difference between objects and arrays is the way you loop them - for objects you use the <code>for...in</code> loop, and for arrays you use the <code>for...of</code> loop (unless looping by index).</p>
       <br>
-      <h3 class="paragraphHeader"></h3>
+      <h3 class="paragraphHeader">Explain what <code>functions</code> are and why they are helpful:</h3>
       <p></p>
       <br>
     </article>
