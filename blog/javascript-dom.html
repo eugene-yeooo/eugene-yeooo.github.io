@@ -47,7 +47,7 @@
       <p><code>document</code> 👉 calls the overarching parent object, i.e. the HTML document itself. You always start with 'document' object.</p>
       <p><code>.getElementByID()</code> 👉 is the DOM method to single out an object by referencing its assigned HTML ID. In this case, we've selected the HTML element with the ID='button'</p>
       <p><code>.innerHTML</code> 👉 is the DOM method to change the content of the HTML element we've singled out. Along with the syntax of the equal symbol and quotation marks to denote a string, this changes the text on the button to 'You clicked on me!'</p>
-      <p>It's worth noting, however, that the solution provided for this example has been simplified to demonstrate interacting with the DOM. In reality, to actually make this work, you will also need to create a <code>function</code> that enacts the code above, and script a DOM method that detects someone clicking the button (either the <code>.addEventListener</code> or <code>.onclick</code> method) and activates the <code>function</code>. But more on this later!</p>
+      <p><strong>NOTE:</strong> the solution provided for this example has been over-simplified just to demonstrate interacting with the DOM. In reality, to actually make this work, you will also need to create a <code>function</code> that enacts the code above, and script a DOM method that detects someone clicking the button (either the <code>.addEventListener</code> or <code>.onclick</code> method) and activates the <code>function</code>. But more on this below!</p>
       <br>
       <h3 class="paragraphHeader">Explain the difference between accessing data from <code>arrays</code> and <code>objects</code>:</h3>
       <p>Arrays and objects are both vessels in JavaScript for storing information and data. They can both store multiple values and can have data added, removed, or altered later. They are both loopable, can be nested within each other, and can contain more of themselves. However, they differ fundamentally in the nature of data they are designed to contain.</p>
@@ -69,12 +69,15 @@
       <h3 class="paragraphHeader">Explain what <code>functions</code> are and why they are helpful:</h3>
       <p>Functions are basically blocks of code that perform a specific task. They are reusable and be called upon multiple times in the script whenever you need them, saving you time from needing to repeat the same code over and over. Here is a syntax example:</p>
       <code>function sum(number1, number2) {<br>&nbsp;&nbsp;return number1 + number2;<br>}</code>
-      <p>In this example, 'sum' is the name of the function (you can name it anything you like), number1 & 2 in the brackets are the parameters being fed into the function (also named however you like), and 'return' is the meat of the function that defines adding those two parameters together. To call this function, you can use <code>console.log(sum(5, 12))</code>.</p>
+      <p>In this example, 'sum' is the name of the function (you can name it anything you like), number1 & 2 in the brackets are the parameters being fed into the function (also named however you like), and 'return' is the meat of the function that defines adding those two parameters together and returns a value. To call this function, you can use <code>console.log(sum(5, 12))</code>, which would calculate 5+12 and return 17.</p>
       <p>Here's another example using the 'button' context from question 3 above - notice how no parameters are needed here:</p>
       <code>function changeButtonText() {<br>&nbsp;&nbsp;document.getElementByID('button').innerHTML = 'You clicked on me!';<br>}</code>
-      <p>To call this function, you can then script a line of code using an event handler DOM method: <code>document.getElementById('Button').onclick = changeButtonText</code> or <code>document.getElementById('Button').addEventListener('click', changeButtonText)</code></p>
+      <p>To call this function, you can then script a line of code using an event handler DOM method: either <code>document.getElementById('Button').onclick = changeButtonText</code> or <code>document.getElementById('Button').addEventListener('click', changeButtonText)</code></p>
       <p>In other cases where you simply need to call the function immediately instead of embedding it in another DOM workflow or console logging it, you can simply script the name of the function followed by brackets, for example: <code>displayShoppingList()</code></p>
-      <p>Aside from being reusable and saving the need to repeat code, functions are also great because they have have a modular nature that helps break down complex problems into smaller manageable chunks, they are easy to read and understand, and they have their own encapsulation scope where variables defined within them are isolated from the rest of the script, preventing potential conflicts.</p>
+      <p><strong>Aside from being reusable and saving the need to repeat code, functions are also great because they:</strong></p> 
+      <p><em>👉 have a modular nature that helps break down complex problems into smaller manageable chunks</em></p>
+      <p><em>👉 are easy to read and understand</em></p>
+      <p><em>👉 have their own encapsulation scope where variables defined within them are isolated from the rest of the script, preventing potential conflicts</em></p>
       <br>
     </article>
     <footer class="blogFooter">
