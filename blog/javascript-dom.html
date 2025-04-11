@@ -45,11 +45,28 @@
       <code>getElementByTagName</code>
       <code>querySelector</code>
       <code>querySelectorAll</code>
-      <p>The fundamental concept of using the DOM is simple: you call upon an object of the webpage, then you apply a DOM 'method(s)' to enact the change or manipulation you intend. An example would be to change the text of a button on a webpage after a user has clicked on it - here is a snippet of code you can use to interact with the DOM:</p>
+      <p>The fundamental concept of using the DOM is simple: you call upon an object of the webpage, then you apply a DOM 'method(s)' to enact the change or manipulation you want. An example would be to change the text of a button on a webpage after a user has clicked on it - here is a snippet of code you can use to interact with the DOM:</p>
       <code>document.getElementByID('button').innerHTML = 'You clicked on me!'</code>
       <br>
       <br>
-      <img src="../images/change-button-text.gif" style="display: block; max-width: 100%; margin: auto;" width="200rem;">
+      <button id="exampleButton" style="display: block; margin: auto; max-width: 100%; font-size: 1.5rem;">Click me 👀</button>
+      <span id="resetButton" style="font-family: monospace; display: block; text-align: center; font-size: 0.6rem; max-width: 100%; padding-top: 0.65rem;"></span>
+      <script>
+        function changeButtonText() {
+          document.getElementById('exampleButton').innerHTML = "You clicked on me!"
+          document.getElementById('resetButton').innerHTML = "psst! you can reset me with a double click"
+        }
+
+        document.getElementById('exampleButton').onclick = changeButtonText
+
+        function changeButtonTextAgain() {
+          document.getElementById('exampleButton').innerHTML = "Click me 👀"
+          document.getElementById('resetButton').innerHTML = ""
+        }
+
+        document.getElementById('exampleButton').addEventListener('dblclick', changeButtonTextAgain)
+      </script>
+      <!-- <img src="../images/change-button-text.gif" style="display: block; max-width: 100%; margin: auto;" width="200rem;"> -->
       <p>Let's break down the code:</p>
       <p><code>document</code> 👉 calls the overarching parent object, i.e. the HTML document itself - you always start with 'document' object</p>
       <p><code>.getElementByID()</code> 👉 is the DOM method to single out an object by referencing its assigned HTML ID. In this case, we've selected the HTML element with the ID='button'</p>
