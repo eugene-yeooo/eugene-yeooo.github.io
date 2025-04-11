@@ -69,11 +69,23 @@ p {
   color: black;
 }
 
+.blogContainer {
+  background-color: rgb(178, 230, 230);
+  padding: 2rem;
+  border-radius: 1%;
+}
+
+.blogHeader {
+  border-left: solid 5px;
+  border-color: rgb(24, 152, 152);
+  padding-left: 1.5rem;
+}
+
 .blogTitle {
   font-family: 'Russo One', sans-serif;
   font-weight: 100;
   font-size: 2rem;
-  padding-top: 2rem;
+  padding-top: 1.5rem;
   margin: 1px;
 }
 

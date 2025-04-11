@@ -19,91 +19,95 @@
   <body class="container">
     <h1><a href=../index.html class="homeLink">Eugene's Dev Academy<br />Journal</a></h1>
 
-    <h2 class="blogTitle">
-      Tech Explained: JavaScript and the DOM</h2>
-    <h3 class="blogSubtitle">Published 11 April 2025</h3>
-    <br>
-    <article>
-      <p>JavaScript, the DOM, and how they relate to each other can be intimidating concepts for someone with no technical programming knowledge or background. However, as with most things in life, it only appears hard and daunting from the outside. With a bit of effort to understand and relate, it's not too bad wrapping your brain around it!</p>
+    <div class="blogContainer">
+      <div class="blogHeader">
+        <h2 class="blogTitle">
+          Tech Explained: JavaScript and the DOM</h2>
+        <h3 class="blogSubtitle">Published 11 April 2025</h3>
+        </div>
       <br>
-      <h3 class="paragraphHeader">An analogy to describe JavaScript and its relationship to HTML and CSS:</h3>
-      <p>If HTML is the timber, the drywall, the floorboards and the general structure of a house, and CSS is the paint job, the wallpaper, the vinyl, the decor and the general design of the building, then JavaScript can be the power tools that put everything together and define the way we interact with construction of HTML/structure and CSS/design of the webpage/house.</p>
-      <p>In fact, JavaScript can also be thought of the appliances and smart home devices that people interact with in the home!</p>
-      <br>
-      <h3 class="paragraphHeader" style="border-top: solid 2px; padding-top: 1.5rem;">Explain <code>control flow</code> and <code>loops</code> using an example process from everyday life:</h3>
-      <p>In JavaScript, control flow is the order in which instructions are carried out for interacting with a webpage. Its script usually runs top to bottom, but with control flow statements, you can manipulate the order of JavaScript instructions - loops are a common example of such statements.</p>
-      <p>Take the process of driving as an everyday life analogy - when you first get in the driver's seat, your <code>control flow</code> could involve indicating if you need to pull out of a parking spot onto the road, or turning on your headlights if it's dark out, or turning on the wipers if it's raining.</p>
-      <p>As you're driving, you should be <code>looping</code> the process of checking your mirrors, adjusting the wheel to stay in your lane, tapping the pedals to maintain an appropriate speed, and paying attention to potential hazards such as other vehicles or pedestrians.</p>
-      <br>
-      <h3 class="paragraphHeader" style="border-top: solid 2px; padding-top: 1.5rem;">Describe what the DOM is and an example of how you might interact with it:</h3>
-      <p>The DOM (short of Document Object Model) is a programming user interface that provides a object-oriented representation of a webpage and is used to manipulate web documents. Web browsers construct the DOM when it loads an HTML document, and structures all its elements as 'objects' in a tree-like representation.</p>
-      <img src="../images/DOM-Tree1.webp" style="display: block; margin: auto; max-width: 100%; width:35rem">
-      <figcaption>Visualisation of HTML as a DOM tree <em>(Image source: <a href="https://www.geeksforgeeks.org/tips-and-tricks-on-javascript-dom-methods/" target="_blank">Geeks for Geeks</a>)</em></figcaption>
-      <p>The DOM allows you to modify the structure, style and content of a document, and more importantly, facilitates the scripting of <em><strong>end user interactions</strong></em> using JavaScript, which allows for <em><strong>changes on a webpage to take place without needing to reload the page</strong></em>.</p>
-      <p>To access the DOM, you simply need to input a DOM access method wherever you're doing your scripting, (e.g. in a .js file with a code editor, in a browser's DevTools console, etc.). Here are some common examples of DOM access methods:</p>
-      <code>getElementByClassName</code>
-      <code>getElementByTagName</code>
-      <code>querySelector</code>
-      <code>querySelectorAll</code>
-      <p>The fundamental concept of using the DOM is simple: you call upon an object of the webpage, then you apply a DOM 'method(s)' to enact the change or manipulation you want. An example would be to change the text of a button on a webpage after a user has clicked on it - here is a snippet of code you can use to interact with the DOM:</p>
-      <code>document.getElementByID('button').innerHTML = 'You clicked on me!'</code>
-      <br>
-      <br>
-      <button id="exampleButton" style="display: block; margin: auto; max-width: 100%; font-size: 1.5rem;">Click me 👀</button>
-      <span id="resetButton" style="font-family: monospace; display: block; text-align: center; font-size: 0.6rem; max-width: 100%; padding-top: 0.65rem;"></span>
-      <script>
-        function changeButtonText() {
-          document.getElementById('exampleButton').innerHTML = "You clicked on me!"
-          document.getElementById('resetButton').innerHTML = "psst! you can double click to reset me"
-        }
+      <article>
+        <p>JavaScript, the DOM, and how they relate to each other can be intimidating concepts for someone with no technical programming knowledge or background. However, as with most things in life, it only appears hard and daunting from the outside. With a bit of effort to understand and relate, it's not too bad wrapping your brain around it!</p>
+        <br>
+        <h3 class="paragraphHeader">An analogy to describe JavaScript and its relationship to HTML and CSS:</h3>
+        <p>If HTML is the timber, the drywall, the floorboards and the general structure of a house, and CSS is the paint job, the wallpaper, the vinyl, the decor and the general design of the building, then JavaScript can be the power tools that put everything together and define the way we interact with construction of HTML/structure and CSS/design of the webpage/house.</p>
+        <p>In fact, JavaScript can also be thought of the appliances and smart home devices that people interact with in the home!</p>
+        <br>
+        <h3 class="paragraphHeader" style="border-top: solid 2px; padding-top: 1.5rem;">Explain <code>control flow</code> and <code>loops</code> using an example process from everyday life:</h3>
+        <p>In JavaScript, control flow is the order in which instructions are carried out for interacting with a webpage. Its script usually runs top to bottom, but with control flow statements, you can manipulate the order of JavaScript instructions - loops are a common example of such statements.</p>
+        <p>Take the process of driving as an everyday life analogy - when you first get in the driver's seat, your <code>control flow</code> could involve indicating if you need to pull out of a parking spot onto the road, or turning on your headlights if it's dark out, or turning on the wipers if it's raining.</p>
+        <p>As you're driving, you should be <code>looping</code> the process of checking your mirrors, adjusting the wheel to stay in your lane, tapping the pedals to maintain an appropriate speed, and paying attention to potential hazards such as other vehicles or pedestrians.</p>
+        <br>
+        <h3 class="paragraphHeader" style="border-top: solid 2px; padding-top: 1.5rem;">Describe what the DOM is and an example of how you might interact with it:</h3>
+        <p>The DOM (short of Document Object Model) is a programming user interface that provides a object-oriented representation of a webpage and is used to manipulate web documents. Web browsers construct the DOM when it loads an HTML document, and structures all its elements as 'objects' in a tree-like representation.</p>
+        <img src="../images/DOM-Tree1.webp" style="display: block; margin: auto; max-width: 100%; width:35rem">
+        <figcaption>Visualisation of HTML as a DOM tree <em>(Image source: <a href="https://www.geeksforgeeks.org/tips-and-tricks-on-javascript-dom-methods/" target="_blank">Geeks for Geeks</a>)</em></figcaption>
+        <p>The DOM allows you to modify the structure, style and content of a document, and more importantly, facilitates the scripting of <em><strong>end user interactions</strong></em> using JavaScript, which allows for <em><strong>changes on a webpage to take place without needing to reload the page</strong></em>.</p>
+        <p>To access the DOM, you simply need to input a DOM access method wherever you're doing your scripting, (e.g. in a .js file with a code editor, in a browser's DevTools console, etc.). Here are some common examples of DOM access methods:</p>
+        <code>getElementByClassName</code>
+        <code>getElementByTagName</code>
+        <code>querySelector</code>
+        <code>querySelectorAll</code>
+        <p>The fundamental concept of using the DOM is simple: you call upon an object of the webpage, then you apply a DOM 'method(s)' to enact the change or manipulation you want. An example would be to change the text of a button on a webpage after a user has clicked on it - here is a snippet of code you can use to interact with the DOM:</p>
+        <code>document.getElementByID('button').innerHTML = 'You clicked on me!'</code>
+        <br>
+        <br>
+        <button id="exampleButton" style="display: block; margin: auto; max-width: 100%; font-size: 1.5rem;">Click me 👀</button>
+        <span id="resetButton" style="font-family: monospace; display: block; text-align: center; font-size: 0.6rem; max-width: 100%; padding-top: 0.65rem;"></span>
+        <script>
+          function changeButtonText() {
+            document.getElementById('exampleButton').innerHTML = "You clicked on me!"
+            document.getElementById('resetButton').innerHTML = "psst! you can double click to reset me"
+          }
 
-        document.getElementById('exampleButton').onclick = changeButtonText
+          document.getElementById('exampleButton').onclick = changeButtonText
 
-        function changeButtonTextAgain() {
-          document.getElementById('exampleButton').innerHTML = "Click me 👀"
-          document.getElementById('resetButton').innerHTML = ""
-        }
+          function changeButtonTextAgain() {
+            document.getElementById('exampleButton').innerHTML = "Click me 👀"
+            document.getElementById('resetButton').innerHTML = ""
+          }
 
-        document.getElementById('exampleButton').addEventListener('dblclick', changeButtonTextAgain)
-      </script>
-      <!-- <img src="../images/change-button-text.gif" style="display: block; max-width: 100%; margin: auto;" width="200rem;"> -->
-      <p>Let's break down the code:</p>
-      <p><code>document</code> 👉 calls the overarching parent object, i.e. the HTML document itself - you always start with 'document' object</p>
-      <p><code>.getElementByID()</code> 👉 is the DOM method to single out an object by referencing its assigned HTML ID. In this case, we've selected the HTML element with the ID='button'</p>
-      <p><code>.innerHTML</code> 👉 is the DOM method to change the content of the HTML element we've singled out. Along with the syntax of the equal symbol and quotation marks to denote a string, this changes the text on the button to 'You clicked on me!'</p>
-      <p><strong>NOTE:</strong> the solution provided for this example has been over-simplified just to demonstrate interacting with the DOM. In reality, to actually make this work, you will also need to create a <code>function</code> that enacts the code above, and script a DOM method that detects someone clicking the button (either the <code>.addEventListener</code> or <code>.onclick</code> method) and activates the <code>function</code>. But more on this below!</p>
-      <br>
-      <h3 class="paragraphHeader" style="border-top: solid 2px; padding-top: 1.5rem;">Explain the difference between accessing data from <code>arrays</code> and <code>objects</code>:</h3>
-      <p>Arrays and objects are both vessels in JavaScript for storing information and data. They can both store multiple values and can have data added, removed, or altered later. They are both loopable, can be nested within each other, and can contain more of themselves. However, they differ fundamentally in the nature of data they are designed to contain.</p>
-      <p style="text-align: center;">--------</p>
-      <p>An <code>object</code> is basically, well, an object, that has properties about it. These properties are listed as key-value pairs, and the order they are listed does not matter. You can label/name each key however you like. Here is a syntax example:</p>
-      <!-- <div style="display: block; margin: auto"> -->
-        <code>let curlyFries = {<br>&nbsp;&nbsp;price: 8;<br>&nbsp;&nbsp;stock: 19;<br>&nbsp;&nbsp;calories: "530kcal";<br>&nbsp;&nbsp;health-rating: "5 stars"<br>}</code>
-      <!-- </div> -->
-      <p>To access data in an object, 'dot notation' is best practice - for example: <code>console.log(curlyFries.calories)</code></p>
-      <p style="text-align: center;">--------</p>
-      <p>An <code>array</code> is basically an ordered list. It is a collection of items that are listed in a specific, indexed order. Here is a syntax example:</p>
-      <!-- <div style="text-align: center;"> -->
-        <code>let customerOrder = ['Iced Mocha', 'Curly Fries', 'Scrambled Eggs', 'Caramel Slice']</code>
-      <!-- </div> -->
-      <p>To access data in an array, use brackets selecting the index position of the item you are after. Notably, arrays are zero-based, i.e. the first item is 0 and the third item is 2. For example: <code>console.log(customerOrder[3])</code> prints 'Caramel Slice'.</p>
-      <p style="text-align: center;">--------</p>
-      <p>Another fun difference between objects and arrays is the way you loop them - for objects you use the <code>for...in</code> loop, and for arrays you use the <code>for...of</code> loop (unless looping by index).</p>
-      <br>
-      <h3 class="paragraphHeader" style="border-top: solid 2px; padding-top: 1.5rem;">Explain what <code>functions</code> are and why they are helpful:</h3>
-      <p>Functions are basically blocks of code that perform a specific task. They are reusable and be called upon multiple times in the script whenever you need them, saving you time from needing to repeat the same code over and over. Here is a syntax example:</p>
-      <code>function sum(number1, number2) {<br>&nbsp;&nbsp;return number1 + number2;<br>}</code>
-      <p>In this example, 'sum' is the name of the function (you can name it anything you like), number1 & 2 in the brackets are the parameters being fed into the function (also named however you like), and 'return' is the meat of the function that defines adding those two parameters together and returns a value. To call this function, you can use <code>console.log(sum(5, 12))</code>, which would calculate 5+12 and return 17.</p>
-      <p>Here's another example using the 'button' context from question 3 above - notice how no parameters are needed here:</p>
-      <code>function changeButtonText() {<br>&nbsp;&nbsp;document.getElementByID('button').innerHTML = 'You clicked on me!';<br>}</code>
-      <p>To call this function, you can then script a line of code using an event handler DOM method: either <code>document.getElementById('Button').onclick = changeButtonText</code> or <code>document.getElementById('Button').addEventListener('click', changeButtonText)</code></p>
-      <p>In other cases where you simply need to call the function immediately instead of embedding it in another DOM workflow or console logging it, you can simply script the name of the function followed by brackets, for example: <code>displayShoppingList()</code></p>
-      <p><strong>Aside from being reusable and saving the need to repeat code, functions are also great because they:</strong></p> 
-      <p><em>👉 have a modular nature that helps break down complex problems into smaller manageable chunks</em></p>
-      <p><em>👉 have their own encapsulation scope where variables defined within them are isolated from the rest of the script, preventing potential conflicts</em></p>
-      <p><em>👉 are easy to read and understand</em></p>
-      <br>
-    </article>
+          document.getElementById('exampleButton').addEventListener('dblclick', changeButtonTextAgain)
+        </script>
+        <!-- <img src="../images/change-button-text.gif" style="display: block; max-width: 100%; margin: auto;" width="200rem;"> -->
+        <p>Let's break down the code:</p>
+        <p><code>document</code> 👉 calls the overarching parent object, i.e. the HTML document itself - you always start with 'document' object</p>
+        <p><code>.getElementByID()</code> 👉 is the DOM method to single out an object by referencing its assigned HTML ID. In this case, we've selected the HTML element with the ID='button'</p>
+        <p><code>.innerHTML</code> 👉 is the DOM method to change the content of the HTML element we've singled out. Along with the syntax of the equal symbol and quotation marks to denote a string, this changes the text on the button to 'You clicked on me!'</p>
+        <p><strong>NOTE:</strong> the solution provided for this example has been over-simplified just to demonstrate interacting with the DOM. In reality, to actually make this work, you will also need to create a <code>function</code> that enacts the code above, and script a DOM method that detects someone clicking the button (either the <code>.addEventListener</code> or <code>.onclick</code> method) and activates the <code>function</code>. But more on this below!</p>
+        <br>
+        <h3 class="paragraphHeader" style="border-top: solid 2px; padding-top: 1.5rem;">Explain the difference between accessing data from <code>arrays</code> and <code>objects</code>:</h3>
+        <p>Arrays and objects are both vessels in JavaScript for storing information and data. They can both store multiple values and can have data added, removed, or altered later. They are both loopable, can be nested within each other, and can contain more of themselves. However, they differ fundamentally in the nature of data they are designed to contain.</p>
+        <p style="text-align: center;">--------</p>
+        <p>An <code>object</code> is basically, well, an object, that has properties about it. These properties are listed as key-value pairs, and the order they are listed does not matter. You can label/name each key however you like. Here is a syntax example:</p>
+        <!-- <div style="display: block; margin: auto"> -->
+          <code>let curlyFries = {<br>&nbsp;&nbsp;price: 8;<br>&nbsp;&nbsp;stock: 19;<br>&nbsp;&nbsp;calories: "530kcal";<br>&nbsp;&nbsp;health-rating: "5 stars"<br>}</code>
+        <!-- </div> -->
+        <p>To access data in an object, 'dot notation' is best practice - for example: <code>console.log(curlyFries.calories)</code></p>
+        <p style="text-align: center;">--------</p>
+        <p>An <code>array</code> is basically an ordered list. It is a collection of items that are listed in a specific, indexed order. Here is a syntax example:</p>
+        <!-- <div style="text-align: center;"> -->
+          <code>let customerOrder = ['Iced Mocha', 'Curly Fries', 'Scrambled Eggs', 'Caramel Slice']</code>
+        <!-- </div> -->
+        <p>To access data in an array, use brackets selecting the index position of the item you are after. Notably, arrays are zero-based, i.e. the first item is 0 and the third item is 2. For example: <code>console.log(customerOrder[3])</code> prints 'Caramel Slice'.</p>
+        <p style="text-align: center;">--------</p>
+        <p>Another fun difference between objects and arrays is the way you loop them - for objects you use the <code>for...in</code> loop, and for arrays you use the <code>for...of</code> loop (unless looping by index).</p>
+        <br>
+        <h3 class="paragraphHeader" style="border-top: solid 2px; padding-top: 1.5rem;">Explain what <code>functions</code> are and why they are helpful:</h3>
+        <p>Functions are basically blocks of code that perform a specific task. They are reusable and be called upon multiple times in the script whenever you need them, saving you time from needing to repeat the same code over and over. Here is a syntax example:</p>
+        <code>function sum(number1, number2) {<br>&nbsp;&nbsp;return number1 + number2;<br>}</code>
+        <p>In this example, 'sum' is the name of the function (you can name it anything you like), number1 & 2 in the brackets are the parameters being fed into the function (also named however you like), and 'return' is the meat of the function that defines adding those two parameters together and returns a value. To call this function, you can use <code>console.log(sum(5, 12))</code>, which would calculate 5+12 and return 17.</p>
+        <p>Here's another example using the 'button' context from question 3 above - notice how no parameters are needed here:</p>
+        <code>function changeButtonText() {<br>&nbsp;&nbsp;document.getElementByID('button').innerHTML = 'You clicked on me!';<br>}</code>
+        <p>To call this function, you can then script a line of code using an event handler DOM method: either <code>document.getElementById('Button').onclick = changeButtonText</code> or <code>document.getElementById('Button').addEventListener('click', changeButtonText)</code></p>
+        <p>In other cases where you simply need to call the function immediately instead of embedding it in another DOM workflow or console logging it, you can simply script the name of the function followed by brackets, for example: <code>displayShoppingList()</code></p>
+        <p><strong>Aside from being reusable and saving the need to repeat code, functions are also great because they:</strong></p> 
+        <p><em>👉 have a modular nature that helps break down complex problems into smaller manageable chunks</em></p>
+        <p><em>👉 have their own encapsulation scope where variables defined within them are isolated from the rest of the script, preventing potential conflicts</em></p>
+        <p><em>👉 are easy to read and understand</em></p>
+        <br>
+      </article>
+    </div>
     <footer class="blogFooter">
       <p>© Eugene's Blog 2025</p>
     </footer>

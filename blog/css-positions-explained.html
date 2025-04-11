@@ -19,54 +19,58 @@
   <body class="container">
     <h1><a href=../index.html class="homeLink">Eugene's Dev Academy<br />Journal</a></h1>
 
-    <h2 class="blogTitle">
-      CSS Positions Explained: Relative vs Absolute vs Fixed
-    </h2>
-    <h3 class="blogSubtitle">Published 2 April 2025</h3>
+    <div class="blogContainer">
+      <div class="blogHeader">
+        <h2 class="blogTitle">
+          CSS Positions Explained: Relative vs Absolute vs Fixed
+        </h2>
+        <h3 class="blogSubtitle">Published 2 April 2025</h3>
+      </div>
 
-    <article>
-      <div class="blogIntro">
-        <img src="../images/static.jpg" alt="CSS static position" style="display: block; margin: auto;" width=600 id="positionsImg-static">
-        <figcaption>The default CSS position is 'static'.</figcaption> 
-        <p>The 'position' property in CSS is one of the most important properties in web design. Working with the left, right, bottom, top and/or z-index properties, it defines the position of elements on a document, and is ultimately used to design the layout of webpages (i.e. what the end user sees).</p>
-        
-               
-        <p>For CSS beginners, it can be quite confusing and hard to understand the difference between three of the most common position property options to switch from the static default: relative, absolute and fixed. Here is a quick overview of how they work:</p>
-      </div>
-      <div class="flexColumn">
+      <article>
+        <div class="blogIntro">
+          <img src="../images/static.jpg" alt="CSS static position" style="display: block; margin: auto;" width=600 id="positionsImg-static">
+          <figcaption>The default CSS position is 'static'.</figcaption> 
+          <p>The 'position' property in CSS is one of the most important properties in web design. Working with the left, right, bottom, top and/or z-index properties, it defines the position of elements on a document, and is ultimately used to design the layout of webpages (i.e. what the end user sees).</p>
+          
+                
+          <p>For CSS beginners, it can be quite confusing and hard to understand the difference between three of the most common position property options to switch from the static default: relative, absolute and fixed. Here is a quick overview of how they work:</p>
+        </div>
+        <div class="flexColumn">
+            <div class="blogTechText">
+            <h3 class="technicalSubHeading"><code>position: relative;</code></h3>
+            <p>When set to 'relative', elements are moved away from its default (static) position on the page. Adjustments can be made with the left, right, top and bottom properties to define its new position exactly.
+            <br>
+            <br>
+            These elements still remain in the normal flow of the document, and other content will not adjust to fit in any gaps left by the relative-positioned element.
+            </p>
+          </div>
+          <img class="positionsImg" src="../images/relative.jpg" alt="CSS relative position" width="480">
+        </div>
+        <br>
+        <div class="flexColumn">
           <div class="blogTechText">
-          <h3 class="technicalSubHeading"><code>position: relative;</code></h3>
-          <p>When set to 'relative', elements are moved away from its default (static) position on the page. Adjustments can be made with the left, right, top and bottom properties to define its new position exactly.
-          <br>
-          <br>
-          These elements still remain in the normal flow of the document, and other content will not adjust to fit in any gaps left by the relative-positioned element.
-          </p>
+            <h3 class="technicalSubHeading"><code>position: absolute;</code></h3>
+            <p>With the 'absolute' position property, elements are positioned relative to their parent element/nearest positined ancestor. The parent element will need to also have a position value asigned other than static (i.e. the default).
+            <br>
+            <br>
+            Notably, these elements are removed from the flow of the document. This means that no space is created for this element on the page, and it is ignored by other elemets (i.e. other elements will behave as if this elelment is not in the document). 
+            </p>
+          </div>
+          <img class="positionsImg" src="../images/absolute.jpg" alt="CSS absolute position" width="480">
         </div>
-        <img class="positionsImg" src="../images/relative.jpg" alt="CSS relative position" width="480">
-      </div>
-      <br>
-      <div class="flexColumn">
-        <div class="blogTechText">
-          <h3 class="technicalSubHeading"><code>position: absolute;</code></h3>
-          <p>With the 'absolute' position property, elements are positioned relative to their parent element/nearest positined ancestor. The parent element will need to also have a position value asigned other than static (i.e. the default).
-          <br>
-          <br>
-          Notably, these elements are removed from the flow of the document. This means that no space is created for this element on the page, and it is ignored by other elemets (i.e. other elements will behave as if this elelment is not in the document). 
-          </p>
+        <br>
+        <div class="flexColumn">
+          <div class="blogTechText">
+            <h3 class="technicalSubHeading"><code>position: fixed;</code></h3>
+            <p>The 'fixed' position property also removes an element from the normal flow of the document. However, unlike 'absolute', they are positioned relative to the html element. A fixed element does not leave a gap on the page where it would have statically occupied.</p>
+          
+            <p>This means that these elements are <strong><em>not affected by scrolling</em></strong>, and will always stay in the same position on the viewport or screen. In fact, you can see a pink fixed element at the bottom right corner of your screen right now!</p>
+          </div>
+          <img class="positionsImg" src="../images/fixed.gif" alt="CSS fixed position" width="480">
         </div>
-        <img class="positionsImg" src="../images/absolute.jpg" alt="CSS absolute position" width="480">
-      </div>
-      <br>
-      <div class="flexColumn">
-        <div class="blogTechText">
-          <h3 class="technicalSubHeading"><code>position: fixed;</code></h3>
-          <p>The 'fixed' position property also removes an element from the normal flow of the document. However, unlike 'absolute', they are positioned relative to the html element. A fixed element does not leave a gap on the page where it would have statically occupied.</p>
-        
-          <p>This means that these elements are <strong><em>not affected by scrolling</em></strong>, and will always stay in the same position on the viewport or screen. In fact, you can see a pink fixed element at the bottom right corner of your screen right now!</p>
-        </div>
-        <img class="positionsImg" src="../images/fixed.gif" alt="CSS fixed position" width="480">
-      </div>
-    </article>
+      </article>
+    </div>
     <br>
     <footer class="blogFooter">
       <p>© Eugene's Blog 2025</p>
