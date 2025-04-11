@@ -29,16 +29,16 @@
       <article>
         <p>JavaScript, the DOM, and how they relate to each other can be intimidating concepts for someone with no technical programming knowledge or background. However, as with most things in life, it only appears hard and daunting from the outside. With a bit of effort to understand and relate, it's not too bad wrapping your brain around it!</p>
         <br>
-        <h3 class="paragraphHeader">An analogy to describe JavaScript and its relationship to HTML and CSS:</h3>
+        <h3 class="paragraphHeader">An analogy - JavaScript and its relationship to HTML and CSS:</h3>
         <p>If HTML is the chassis, the windscreen, the engine, the seats and the general structure of a car, and CSS is the paint job, the seat covers, the bumper stickers, the accessories and the general design of the vehicle, then JavaScript can be the electronics, steering wheel and pedals that link everything together and define the way we interact with the HTML/structure and CSS/design of the webpage/car.</p>
         <p>Accelerating, breaking, turning up the radio, turning down the air-conditioning, indicating and adjusting the position of your seat can all be thought of as the JavaScript of a vehicle!</p>
         <br>
-        <h3 class="paragraphHeader" style="border-top: solid 2px; padding-top: 1.5rem;">Explain <code>control flow</code> and <code>loops</code> using an example process from everyday life:</h3>
+        <h3 class="paragraphHeader" style="border-top: solid 2px; padding-top: 1.5rem;">What are <code>control flow</code> and <code>loops</code>? What is an everyday life example?</h3>
         <p>In JavaScript, control flow is the order in which instructions are carried out for interacting with a webpage. Its script usually runs top to bottom, but with control flow statements, you can manipulate the order of JavaScript instructions - loops are a common example of such statements.</p>
         <p>Take the process of driving as an everyday life analogy - when you first get in the driver's seat, your <code>control flow</code> could involve indicating if you need to pull out of a parking spot onto the road, or turning on your headlights if it's dark out, or turning on the wipers if it's raining.</p>
         <p>As you're driving, you should be <code>looping</code> the process of checking your mirrors, adjusting the wheel to stay in your lane, tapping the pedals to maintain an appropriate speed, and paying attention to potential hazards such as other vehicles or pedestrians.</p>
         <br>
-        <h3 class="paragraphHeader" style="border-top: solid 2px; padding-top: 1.5rem;">Describe what the DOM is and an example of how you might interact with it:</h3>
+        <h3 class="paragraphHeader" style="border-top: solid 2px; padding-top: 1.5rem;">What is the DOM and an how might you interact with it?</h3>
         <p>The DOM (short of Document Object Model) is a programming user interface that provides a object-oriented representation of a webpage and is used to manipulate web documents. Web browsers construct the DOM when it loads an HTML document, and structures all its elements as 'objects' in a tree-like representation.</p>
         <img src="../images/DOM-Tree1.webp" style="display: block; margin: auto; max-width: 100%; width:35rem">
         <figcaption>Visualisation of HTML as a DOM tree <em>(Image source: <a href="https://www.geeksforgeeks.org/tips-and-tricks-on-javascript-dom-methods/" target="_blank">Geeks for Geeks</a>)</em></figcaption>
@@ -76,7 +76,7 @@
         <p><code>.innerHTML</code> 👉 is the DOM method to change the content of the HTML element we've singled out. Along with the syntax of the equal symbol and quotation marks to denote a string, this changes the text on the button to 'You clicked on me!'</p>
         <p><strong>NOTE:</strong> the solution provided for this example has been over-simplified just to demonstrate interacting with the DOM. In reality, to actually make this work, you will also need to create a <code>function</code> that enacts the code above, and script a DOM method that detects someone clicking the button (either the <code>.addEventListener</code> or <code>.onclick</code> method) and activates the <code>function</code>. But more on this below!</p>
         <br>
-        <h3 class="paragraphHeader" style="border-top: solid 2px; padding-top: 1.5rem;">Explain the difference between accessing data from <code>arrays</code> and <code>objects</code>:</h3>
+        <h3 class="paragraphHeader" style="border-top: solid 2px; padding-top: 1.5rem;">What's the difference between accessing data from <code>arrays</code> and <code>objects</code>?</h3>
         <p>Arrays and objects are both vessels in JavaScript for storing information and data. They can both store multiple values and can have data added, removed, or altered later. They are both loopable, can be nested within each other, and can contain more of themselves. However, they differ fundamentally in the nature of data they are designed to contain.</p>
         <p style="text-align: center;">--------</p>
         <p>An <code>object</code> is basically, well, an object, that has properties about it. These properties are listed as key-value pairs, and the order they are listed does not matter. You can label/name each key however you like. Here is a syntax example:</p>
@@ -93,7 +93,7 @@
         <p style="text-align: center;">--------</p>
         <p>Another fun difference between objects and arrays is the way you loop them - for objects you use the <code>for...in</code> loop, and for arrays you use the <code>for...of</code> loop (unless looping by index).</p>
         <br>
-        <h3 class="paragraphHeader" style="border-top: solid 2px; padding-top: 1.5rem;">Explain what <code>functions</code> are and why they are helpful:</h3>
+        <h3 class="paragraphHeader" style="border-top: solid 2px; padding-top: 1.5rem;">What are <code>functions</code> and why are they helpful?</h3>
         <p>Functions are basically blocks of code that perform a specific task. They are reusable and be called upon multiple times in the script whenever you need them, saving you time from needing to repeat the same code over and over. Here is a syntax example:</p>
         <code>function sum(number1, number2) {<br>&nbsp;&nbsp;return number1 + number2;<br>}</code>
         <p>In this example, 'sum' is the name of the function (you can name it anything you like), number1 & 2 in the brackets are the parameters being fed into the function (also named however you like), and 'return' is the meat of the function that defines adding those two parameters together and returns a value. To call this function, you can use <code>console.log(sum(5, 12))</code>, which would calculate 5+12 and return 17.</p>
