@@ -37,7 +37,7 @@
       <br>
       <h3 class="paragraphHeader">Describe what the DOM is and an example of how you might interact with it:</h3>
       <p>The DOM (short of Document Object Model) is a programming user interface that provides a object-oriented representation of a webpage and is used to manipulate web documents. Web browsers construct the DOM when it loads an HTML document, and structures all its elements as 'objects' in a tree-like representation.</p>
-      <p>The DOM allows you to modify the structure, style and content of a document, and most importantly, facilitates the scripting of user interactions using JavaScript, which allows for changes on a webpage to take place without needing to reload the page.</p>
+      <p>The DOM allows you to modify the structure, style and content of a document, and more importantly, facilitates the scripting of <em><strong>end user interactions</strong></em> using JavaScript, which allows for <em><strong>changes on a webpage to take place without needing to reload the page</strong></em>.</p>
       <p>To access the DOM, you simply need to input a DOM access method wherever you're doing your scripting, (e.g. in a .js file with a code editor, in a browser's DevTools console, etc.). Here are some common examples of DOM access methods:</p>
       <code>getElementByClassName</code>
       <code>getElementByTagName</code>
@@ -49,7 +49,7 @@
       <br>
       <img src="../images/change-button-text.gif" style="display: block; max-width: 100%; margin: auto;" width="200rem;">
       <p>Let's break down the code:</p>
-      <p><code>document</code> 👉 calls the overarching parent object, i.e. the HTML document itself. You always start with 'document' object.</p>
+      <p><code>document</code> 👉 calls the overarching parent object, i.e. the HTML document itself - you always start with 'document' object</p>
       <p><code>.getElementByID()</code> 👉 is the DOM method to single out an object by referencing its assigned HTML ID. In this case, we've selected the HTML element with the ID='button'</p>
       <p><code>.innerHTML</code> 👉 is the DOM method to change the content of the HTML element we've singled out. Along with the syntax of the equal symbol and quotation marks to denote a string, this changes the text on the button to 'You clicked on me!'</p>
       <p><strong>NOTE:</strong> the solution provided for this example has been over-simplified just to demonstrate interacting with the DOM. In reality, to actually make this work, you will also need to create a <code>function</code> that enacts the code above, and script a DOM method that detects someone clicking the button (either the <code>.addEventListener</code> or <code>.onclick</code> method) and activates the <code>function</code>. But more on this below!</p>
