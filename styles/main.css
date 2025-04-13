@@ -188,6 +188,16 @@ code {
   font-family: 'Changa', sans-serif;
 }
 
+#teWhareTable,
+tr,
+th,
+td {
+  font-family: 'Changa', sans-serif;
+  border-style: solid;
+  padding: 1rem;
+  border-collapse: collapse;
+}
+
 @media only screen and (max-width: 900px) {
   .flexColumn {
     flex-wrap: wrap;
