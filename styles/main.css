@@ -28,7 +28,8 @@ h1 {
 
 nav {
   background-color: rgb(178, 230, 230);
-  min-width: fit-content;
+  min-width: 13rem;
+  width: 50rem;
   max-height: fit-content;
   padding: 30px 50px;
   padding-left: 50px;
@@ -82,7 +83,7 @@ ul {
 
 .blogHeader {
   border-left: solid 5px;
-  border-color: rgb(43, 185, 185);
+  border-color: violet;
   padding-left: 1.5rem;
 }
 
