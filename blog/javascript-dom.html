@@ -52,22 +52,22 @@
         <code>document.getElementByID('button').innerHTML = 'You clicked on me!'</code>
         <br>
         <br>
-        <button id="exampleButton" style="display: block; margin: auto; max-width: 100%; font-size: 1.5rem;">Click me 👀</button>
-        <span id="resetButton" style="font-family: monospace; display: block; text-align: center; font-size: 0.6rem; max-width: 100%; padding-top: 0.65rem;"></span>
+        <button id="domExampleButton">Click me 👀</button>
+        <span id="domResetButton" style="font-family: monospace; display: block; text-align: center; font-size: 0.6rem; max-width: 100%; padding-top: 0.65rem;"></span>
         <script>
           function changeButtonText() {
-            document.getElementById('exampleButton').innerHTML = "You clicked on me!"
-            document.getElementById('resetButton').innerHTML = "psst! you can double click to reset me"
+            document.getElementById('domExampleButton').innerHTML = "You clicked on me!"
+            document.getElementById('domResetButton').innerHTML = "psst! you can double click to reset me"
           }
 
-          document.getElementById('exampleButton').onclick = changeButtonText
+          document.getElementById('domExampleButton').onclick = changeButtonText
 
           function changeButtonTextAgain() {
-            document.getElementById('exampleButton').innerHTML = "Click me 👀"
-            document.getElementById('resetButton').innerHTML = ""
+            document.getElementById('domExampleButton').innerHTML = "Click me 👀"
+            document.getElementById('domResetButton').innerHTML = ""
           }
 
-          document.getElementById('exampleButton').addEventListener('dblclick', changeButtonTextAgain)
+          document.getElementById('domExampleButton').addEventListener('dblclick', changeButtonTextAgain)
         </script>
         <!-- <img src="../images/change-button-text.gif" style="display: block; max-width: 100%; margin: auto;" width="200rem;"> -->
         <p>Let's break down the code:</p>
