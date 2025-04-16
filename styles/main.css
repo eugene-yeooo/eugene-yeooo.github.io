@@ -175,6 +175,10 @@ code {
   display: inline-block;
 }
 
+.denseList li {
+  padding-top: 1rem;
+}
+
 #domExampleButton {
   padding: 0.5rem 1.5rem;
   background-color: violet;
