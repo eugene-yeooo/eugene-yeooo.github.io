@@ -70,6 +70,11 @@ ul {
   line-height: 120%;
 }
 
+ol {
+  font-family: 'Changa', sans-serif;
+  line-height: 150%;
+}
+
 .homeLink {
   text-decoration: none;
   color: black;
