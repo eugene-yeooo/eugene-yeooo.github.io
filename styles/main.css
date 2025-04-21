@@ -111,6 +111,14 @@ ol {
   margin-bottom: 3rem;
 }
 
+.blog-intro2 {
+  font-size: 2rem;
+  font-family: 'Special Elite', system-ui;
+  font-style: italic;
+  margin: 1rem 0 2rem;
+  text-align: center;
+}
+
 .technicalSubHeading {
   font-family: 'Changa', sans-serif;
   font-weight: 500;
