@@ -1,4 +1,5 @@
 import VantaNetBackground from '@/components/VantaNetBackground'
+import Image from 'next/image'
 
 export default function Home() {
   const sectionStyle =
@@ -10,26 +11,42 @@ export default function Home() {
 
       {/* About Section */}
       <section id="about" className={sectionStyle}>
-        <div className="p-8 rounded-lg shadow-lg max-w-3xl w-full backdrop-blur-md bg-opacity-90">
-          <h2 className="text-4xl font-bold mb-6">&lt;About Me /&gt;</h2>
-          <p className="max-w-3xl text-lg leading-relaxed">
-            I'm a full-stack engineer with passion for the outdoors, adventure &
-            technical skills, and I pivoted into the tech industry to pursue a
-            career that revolves around problem-solving and collaboration.
-            <br />
-            My journey in tech reflects how I've thrived in learning, teaching,
-            and working as a team on expeditions in the rock climbing,
-            canyoning, caving and mountaineering space. Like getting people
-            engaged with technical rope skills and the outdoors, I get excited
-            from people using the clean, responsive, and user-friendly
-            applications I've built.
-            <br />
-            With a background in digital marketing and communications, I bring a
-            creative mindset, strong human skills, and sharp attention to detail
-            in project collaborations. I love making an impact, and I love tech
-            for the endless opportunities to drive impact, problem-solve, and
-            for breakthroughs that challenge my mind.
-          </p>
+        <div className="flex gap-10">
+          <div className="p-8 rounded-lg shadow-lg max-w-3xl w-full bg-white">
+            <h2 className="text-5xl font-black text-black bg-green-200 py-2 font-mono max-w-fit px-3">
+              EUGENE
+            </h2>
+            <h3 className="text-4xl font-black mb-4 text-black py-2 font-mono max-w-fit">
+              Full-Stack Developer
+            </h3>
+            <p className="max-w-3xl leading-relaxed text-left text-black text-md">
+              I'm a full-stack engineer with passion for the outdoors, adventure
+              & technical skills, and I pivoted into the tech industry to pursue
+              a career that revolves around problem-solving and collaboration.
+              <br />
+              <br />
+              My journey in tech reflects how I've thrived in learning,
+              teaching, and working as a team on expeditions in the rock
+              climbing, canyoning, caving and mountaineering space. Like getting
+              people engaged with technical rope skills and the outdoors, I get
+              excited from people using the clean, responsive, and user-friendly
+              applications I've built.
+              <br />
+              <br />
+              With a background in digital marketing and communications, I bring
+              a creative mindset, strong human skills, and sharp attention to
+              detail in project collaborations. I love making an impact, and I
+              love tech for the endless opportunities to drive impact,
+              problem-solve, and for breakthroughs that challenge my mind.
+            </p>
+          </div>
+          <Image
+            src="/images/DSC04088.avif"
+            alt="Profile picture"
+            width={100}
+            height={100}
+            className="min-w-md object-cover border-white border-10"
+          />
         </div>
       </section>
 

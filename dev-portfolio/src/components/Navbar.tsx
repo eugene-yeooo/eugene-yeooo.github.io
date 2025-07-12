@@ -1,8 +1,37 @@
 'use client'
 
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+
+const sections = ['about', 'skills', 'projects']
+
+const capitalize = (str: string) => str.charAt(0).toUpperCase() + str.slice(1)
 
 const Navbar = () => {
+  const [activeSection, setActiveSection] = useState<string>('about')
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id)
+          }
+        })
+      },
+      {
+        root: null,
+        threshold: 0.6,
+      }
+    )
+
+    sections.forEach((id) => {
+      const el = document.getElementById(id)
+      if (el) observer.observe(el)
+    })
+
+    return () => observer.disconnect()
+  }, [])
+
   const handleClick = (
     e: React.MouseEvent<HTMLAnchorElement>,
     targetId: string
@@ -14,32 +43,29 @@ const Navbar = () => {
     }
   }
 
-  const style =
-    'hover:bg-green-200 px-3 py-1 rounded text-black text-xl font-mono font-semibold cursor-pointer'
+  const baseStyle =
+    'px-3 py-1 rounded text-black text-xl font-mono font-semibold cursor-pointer transition-colors'
+  const activeStyle = 'bg-green-200 text-black'
+  const hoverStyle = 'hover:bg-green-200'
 
   return (
     <nav className="fixed top-0 w-full bg-white shadow-md z-50 flex justify-center space-x-8 p-6">
-      <a
-        href="#about"
-        onClick={(e) => handleClick(e, 'about')}
-        className={style}
-      >
-        &lt;About Me /&gt;
-      </a>
-      <a
-        href="#skills"
-        onClick={(e) => handleClick(e, 'skills')}
-        className={style}
-      >
-        Skills
-      </a>
-      <a
-        href="#projects"
-        onClick={(e) => handleClick(e, 'projects')}
-        className={style}
-      >
-        Projects
-      </a>
+      {sections.map((section) => (
+        <a
+          key={section}
+          href={`#${section}`}
+          onClick={(e) => handleClick(e, section)}
+          className={`${baseStyle} ${hoverStyle} ${
+            activeSection === section ? activeStyle : ''
+          }`}
+        >
+          {activeSection === section
+            ? `<${section === 'about' ? 'About Me' : capitalize(section)} />`
+            : section === 'about'
+            ? 'About Me'
+            : capitalize(section)}
+        </a>
+      ))}
     </nav>
   )
 }
