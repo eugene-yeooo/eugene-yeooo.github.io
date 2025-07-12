@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react'
 
-const sections = ['about', 'skills', 'projects']
+const sections = ['about', 'skills', 'projects', 'contact']
 
 const capitalize = (str: string) => str.charAt(0).toUpperCase() + str.slice(1)
 

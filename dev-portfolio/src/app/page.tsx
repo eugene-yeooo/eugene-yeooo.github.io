@@ -1,5 +1,8 @@
+'use client'
+
 import VantaNetBackground from '@/components/VantaNetBackground'
 import Image from 'next/image'
+import { Download, Send } from 'lucide-react'
 
 export default function Home() {
   const sectionStyle =
@@ -20,17 +23,18 @@ export default function Home() {
               Full-Stack Developer
             </h3>
             <p className="max-w-3xl leading-relaxed text-left text-black text-md">
-              I'm a full-stack engineer with passion for the outdoors, adventure
-              & technical skills, and I pivoted into the tech industry to pursue
-              a career that revolves around problem-solving and collaboration.
+              Hey! 👋 I'm a full-stack engineer with passion for the outdoors,
+              adventure & technical skills. Based in New Zealand, I transitioned
+              into the tech industry to pursue a career that revolves around
+              problem-solving and collaboration.
               <br />
               <br />
               My journey in tech reflects how I've thrived in learning,
               teaching, and working as a team on expeditions in the rock
               climbing, canyoning, caving and mountaineering space. Like getting
               people engaged with technical rope skills and the outdoors, I get
-              excited from people using the clean, responsive, and user-friendly
-              applications I've built.
+              <span className="font-bold"> ~excited~</span> from people using
+              the clean, responsive, and user-friendly applications I've built.
               <br />
               <br />
               With a background in digital marketing and communications, I bring
@@ -39,6 +43,27 @@ export default function Home() {
               love tech for the endless opportunities to drive impact,
               problem-solve, and for breakthroughs that challenge my mind.
             </p>
+            <div className="mt-6 flex flex-col sm:flex-row gap-4">
+              <a
+                href="/Eugene Yeo_CV.pdf"
+                download
+                className=" bg-black text-white font-bold px-4 py-2 rounded hover:bg-green-200 hover:text-black hover:font-bold transition flex items-center gap-2"
+              >
+                <Download size={20} />
+                Download CV
+              </a>
+
+              <button
+                onClick={() => {
+                  const el = document.getElementById('contact')
+                  el?.scrollIntoView({ behavior: 'smooth' })
+                }}
+                className="border text-black font-bold px-4 py-2 rounded hover:bg-green-200  hover:border-white transition flex items-center gap-2"
+              >
+                <Send size={20} />
+                Contact Me
+              </button>
+            </div>
           </div>
           <Image
             src="/images/DSC04088.avif"
@@ -87,6 +112,22 @@ export default function Home() {
               JavaScript stack.
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className={sectionStyle}>
+        <div className="bg-white p-8 rounded-lg shadow-lg max-w-2xl text-black">
+          <h2 className="text-4xl font-bold mb-4">&lt;Contact /&gt;</h2>
+          <p>
+            You can reach me at{' '}
+            <a
+              href="mailto:eugeneyeoooo@gmail.com"
+              className="text-blue-600 underline"
+            >
+              eugeneyeoooo@gmail.com
+            </a>
+          </p>
         </div>
       </section>
     </div>
