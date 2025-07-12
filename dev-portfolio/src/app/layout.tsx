@@ -1,3 +1,4 @@
+import VantaNetBackground from '@/components/VantaNetBackground'
 import Navbar from '../components/Navbar'
 import '../styles/globals.css'
 
@@ -10,6 +11,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="relative">
         <Navbar />
+        <VantaNetBackground />
         <main>{children}</main>
       </body>
     </html>

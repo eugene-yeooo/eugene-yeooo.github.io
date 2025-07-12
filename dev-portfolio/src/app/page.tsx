@@ -1,6 +1,5 @@
 'use client'
 
-import VantaNetBackground from '@/components/VantaNetBackground'
 import Image from 'next/image'
 import { Download, Send } from 'lucide-react'
 
@@ -10,8 +9,6 @@ export default function Home() {
 
   return (
     <div className="relative min-h-screen overflow-hidden text-white">
-      <VantaNetBackground />
-
       {/* About Section */}
       <section id="about" className={sectionStyle}>
         <div className="flex gap-10">
