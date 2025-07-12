@@ -10,7 +10,7 @@ export default function MarqBackend() {
   const content = ['Express.js', 'Knex.js', 'SQLite', 'PostgreSQL', 'Postman']
 
   const itemStyle =
-    'inline-block px-4 py-1 mx-2 bg-white rounded shadow text-black hover:bg-black hover:text-white transition whitespace-nowrap transform transition-transform duration-300 ease-in-out hover:scale-105'
+    'inline-block px-4 py-1 mx-2 bg-white rounded shadow text-black hover:bg-green-200 transition whitespace-nowrap transform transition-transform duration-300 ease-in-out hover:scale-105'
 
   useAnimationFrame((_, delta) => {
     if (scrollRef.current) {
@@ -37,17 +37,17 @@ export default function MarqBackend() {
       <h1 className="text-black font-mono text-lg font-bold mb-2">
         Backend Frameworks & Databases:
       </h1>
-      <div className="relative overflow-hidden bg-green-200 text-black py-2">
+      <div className="relative overflow-hidden bg-black text-black py-2">
         {/* Fading edges */}
         <div className="pointer-events-none absolute inset-0 z-10 flex justify-between">
-          <div className="w-32 bg-gradient-to-r from-white to-transparent" />
-          <div className="w-32 bg-gradient-to-l from-white to-transparent" />
+          <div className="w-40 bg-gradient-to-r from-white to-transparent" />
+          <div className="w-40 bg-gradient-to-l from-white to-transparent" />
         </div>
 
         {/* Scrolling content */}
         <div className="whitespace-nowrap text-sm font-mono font-bold">
           <div ref={scrollRef} className="inline-block">
-            {[...content, ...content].map((skill, i) => (
+            {[...content, ...content, ...content].map((skill, i) => (
               <span key={i} className={itemStyle}>
                 {skill}
               </span>

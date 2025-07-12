@@ -9,7 +9,7 @@ import MarqTools from '@/components/marquees/MarqTools'
 
 export default function Home() {
   const sectionStyle =
-    'min-h-screen p-8 pt-24 scroll-mt-24 flex flex-col items-center text-center'
+    'min-h-screen p-8 scroll-mt-24 flex flex-col items-center text-center'
 
   return (
     <div className="relative min-h-screen overflow-hidden text-white">
