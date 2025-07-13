@@ -12,8 +12,8 @@ export default function Contact() {
         </h2>
 
         {/* Contact Info */}
-        <section className="flex border-b border-gray-200 mb-2">
-          <div className="text-left mb-6 space-y-2 pr-10 border-r border-gray-200">
+        <section className="flex border-b border-gray-400 mb-2">
+          <div className="text-left mb-6 space-y-2 pr-10 border-r border-gray-400">
             <p className="flex items-center gap-2">
               <Phone size={18} />{' '}
               <span className="font-normal">+64 22 429 0210</span>
@@ -66,7 +66,7 @@ export default function Contact() {
         </section>
 
         {/* Contact Form */}
-        <h1 className="font-mono font-semibold text-xl mb-2">
+        <h1 className="font-mono font-semibold text-xl mb-1 pt-1">
           Send me a message:
         </h1>
         <form className="flex flex-col gap-4">

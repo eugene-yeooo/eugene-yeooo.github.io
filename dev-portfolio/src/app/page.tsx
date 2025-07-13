@@ -10,9 +10,6 @@ import Icons from '@/components/skills/Icons'
 import Contact from '@/components/Contact'
 
 export default function Home() {
-  const sectionStyle =
-    'min-h-screen p-8 scroll-mt-24 flex flex-col items-center text-center'
-
   return (
     <div className="relative min-h-screen overflow-hidden text-white">
       {/* About Section */}
@@ -100,7 +97,10 @@ export default function Home() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className={sectionStyle}>
+      <section
+        id="projects"
+        className="min-h-screen p-8 scroll-mt-24 flex flex-col items-center text-center"
+      >
         <h2 className="text-4xl font-bold mb-6">&lt;Projects /&gt;</h2>
         <div className="space-y-8 max-w-4xl">
           <div className="bg-white/10 p-6 rounded-lg">
@@ -127,7 +127,7 @@ export default function Home() {
       {/* Contact Section */}
       <section
         id="contact"
-        className="min-h-screen p-6 scroll-mt-24 flex flex-col items-center text-center"
+        className="min-h-screen pt-30 flex flex-col items-center text-center"
       >
         <Contact />
       </section>
