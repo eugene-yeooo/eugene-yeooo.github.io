@@ -1,0 +1,140 @@
+'use client'
+
+import Image from 'next/image'
+
+export default function Icons() {
+  return (
+    <div className="mb-1 grid grid-cols-9 gap-2 gap-y-2 max-w-2xl mx-auto">
+      <Image
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg"
+        alt="HTML5"
+        width={80}
+        height={80}
+        className="object-cover"
+      />
+      <Image
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg"
+        alt="CSS3"
+        width={80}
+        height={80}
+        className="object-cover"
+      />
+      <Image
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+        alt="JavaScript"
+        width={80}
+        height={80}
+        className="object-cover"
+      />
+      <Image
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+        alt="TypeScript"
+        width={80}
+        height={80}
+        className="object-cover"
+      />
+      <Image
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg"
+        alt="React"
+        width={80}
+        height={80}
+        className="object-cover"
+      />
+
+      <Image
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg"
+        alt="GitHub"
+        width={80}
+        height={80}
+        className="object-cover"
+      />
+
+      <Image
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oauth/oauth-original.svg"
+        alt="Auth"
+        width={80}
+        height={80}
+        className="object-cover"
+      />
+      <Image
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg"
+        alt="Postman"
+        width={80}
+        height={80}
+        className="object-cover"
+      />
+      <Image
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg"
+        alt="Postgresql"
+        width={80}
+        height={80}
+        className="object-cover"
+      />
+      <Image
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/framermotion/framermotion-original-wordmark.svg"
+        alt="Framer Motion"
+        width={80}
+        height={80}
+        className="object-cover"
+      />
+      <Image
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original-wordmark.svg"
+        alt="Next.js"
+        width={80}
+        height={80}
+        className="object-cover"
+      />
+      <Image
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg"
+        alt="Git"
+        width={80}
+        height={80}
+        className="object-cover"
+      />
+      <Image
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"
+        alt="Node.js"
+        width={80}
+        height={80}
+        className="object-cover"
+      />
+      <Image
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/knexjs/knexjs-original-wordmark.svg"
+        alt="Knex.js"
+        width={80}
+        height={80}
+        className="object-cover"
+      />
+      <Image
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg"
+        alt="npm"
+        width={80}
+        height={80}
+        className="object-cover"
+      />
+      <Image
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original-wordmark.svg"
+        alt="SQLite"
+        width={80}
+        height={80}
+        className="object-cover"
+      />
+
+      <Image
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg"
+        alt="Express"
+        width={80}
+        height={80}
+        className="object-cover"
+      />
+
+      <Image
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-plain-wordmark.svg"
+        alt="Tailwind CSS"
+        width={80}
+        height={80}
+        className="object-cover"
+      />
+    </div>
+  )
+}

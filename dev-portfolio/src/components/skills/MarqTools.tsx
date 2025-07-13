@@ -16,6 +16,7 @@ export default function MarqBackend() {
     'REST APIs',
     'Turbopack',
     'VS Code',
+    'Render',
   ]
 
   const itemStyle =

@@ -7,7 +7,15 @@ export default function MarqBackend() {
   const x = useRef(0)
   const scrollRef = useRef<HTMLDivElement>(null)
 
-  const content = ['Express.js', 'Knex.js', 'SQLite', 'PostgreSQL', 'Postman']
+  const content = [
+    'Express.js',
+    'Knex.js',
+    'SQLite',
+    'PostgreSQL',
+    'Multer',
+    'Cloudinary',
+    'Postman',
+  ]
 
   const itemStyle =
     'inline-block px-4 py-1 mx-2 bg-white rounded shadow text-black hover:bg-green-200 transition whitespace-nowrap transform transition-transform duration-300 ease-in-out hover:scale-105'
@@ -47,11 +55,13 @@ export default function MarqBackend() {
         {/* Scrolling content */}
         <div className="whitespace-nowrap text-sm font-mono font-bold">
           <div ref={scrollRef} className="inline-block">
-            {[...content, ...content, ...content].map((skill, i) => (
-              <span key={i} className={itemStyle}>
-                {skill}
-              </span>
-            ))}
+            {[...content, ...content, ...content, ...content].map(
+              (skill, i) => (
+                <span key={i} className={itemStyle}>
+                  {skill}
+                </span>
+              )
+            )}
           </div>
         </div>
       </div>

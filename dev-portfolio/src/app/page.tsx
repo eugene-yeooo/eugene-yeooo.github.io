@@ -2,10 +2,11 @@
 
 import Image from 'next/image'
 import { Download, Send } from 'lucide-react'
-import MarqLandF from '@/components/marquees/MarqLandF'
-import MarqBackend from '@/components/marquees/MarqBackend'
-import MarqStyling from '@/components/marquees/MarqStyling'
-import MarqTools from '@/components/marquees/MarqTools'
+import MarqLandF from '@/components/skills/MarqLandF'
+import MarqBackend from '@/components/skills/MarqBackend'
+import MarqStyling from '@/components/skills/MarqStyling'
+import MarqTools from '@/components/skills/MarqTools'
+import Icons from '@/components/skills/Icons'
 
 export default function Home() {
   const sectionStyle =
@@ -80,7 +81,10 @@ export default function Home() {
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className={sectionStyle}>
+      <section
+        id="skills"
+        className="min-h-screen p-8 pt-10 scroll-mt-4 flex flex-col items-center justify-center text-center"
+      >
         <div className="p-8 rounded-lg shadow-lg max-w-3xl w-full bg-white">
           <h2 className="text-4xl font-bold mb-6 text-black bg-green-200 py-2 font-mono px-3 inline-block">
             Skills
@@ -90,6 +94,7 @@ export default function Home() {
           <MarqBackend />
           <MarqStyling />
           <MarqTools />
+          <Icons />
         </div>
       </section>
 
