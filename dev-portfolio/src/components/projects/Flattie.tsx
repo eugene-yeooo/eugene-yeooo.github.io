@@ -5,7 +5,7 @@ import { Github } from 'lucide-react'
 
 export default function Flattie() {
   return (
-    <div className="border text-black rounded-lg shadow-lg p-3 max-w-sm w-full flex flex-col items-center text-center">
+    <div className="border text-black rounded-lg shadow-xl p-3 max-w-sm w-full flex flex-col items-center text-center transform transition-transform duration-300 ease-in-out hover:scale-105">
       {/* Project Image */}
       <div className="mb-2 overflow-hidden w-full">
         <Image
@@ -18,7 +18,9 @@ export default function Flattie() {
       </div>
 
       {/* Title */}
-      <h3 className="text-4xl font-black font-sans mb-1">flatt.ie</h3>
+      <h3 className="text-3xl font-black font-sans mb-1 text-amber-900">
+        flatt.ie
+      </h3>
 
       {/* Subheader */}
 
@@ -34,7 +36,7 @@ export default function Flattie() {
 
       {/* GitHub Button */}
       <a
-        href="https://github.com/eugene-yeooo/crux"
+        href="https://github.com/eugene-yeooo/flatt.ie"
         target="_blank"
         rel="noopener noreferrer"
         className="inline-flex items-center text-sm gap-2 border-2 border-black text-black font-bold px-3 py-2 rounded hover:bg-green-200 hover:border-white hover:text-black transition"

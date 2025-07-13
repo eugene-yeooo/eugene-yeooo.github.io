@@ -5,7 +5,7 @@ import { Github } from 'lucide-react'
 
 export default function Crux() {
   return (
-    <div className="border text-black rounded-lg shadow-lg p-3 max-w-sm w-full flex flex-col items-center text-center">
+    <div className="border text-black rounded-lg shadow-xl p-3 max-w-sm w-full flex flex-col items-center text-center transform transition-transform duration-300 ease-in-out hover:scale-105">
       {/* Project Image */}
       <div className="mb-2 overflow-hidden w-full">
         <Image
@@ -22,7 +22,7 @@ export default function Crux() {
 
       {/* Subheader */}
 
-      <p className="italic font-mono text-sm text-gray-600 mb-3">
+      <p className="italic font-mono text-sm text-black mb-3">
         Work in Progress
       </p>
 

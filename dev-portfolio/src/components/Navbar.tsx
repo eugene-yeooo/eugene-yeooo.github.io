@@ -50,33 +50,59 @@ const Navbar = () => {
   const hoverStyle = 'hover:bg-green-200'
 
   return (
-    <div>
-      <nav className="fixed top-0 w-full bg-white shadow-md z-50 flex justify-center space-x-8 p-6">
-        <Image
-          src="/images/seal (5).jpg"
-          alt="logo"
-          width={80}
-          height={50}
-          className="object-cover max-w-12 fixed left-10 top-4.5"
-        />
-        {sections.map((section) => (
-          <a
-            key={section}
-            href={`#${section}`}
-            onClick={(e) => handleClick(e, section)}
-            className={`${baseStyle} ${hoverStyle} ${
-              activeSection === section ? activeStyle : ''
-            }`}
-          >
-            {activeSection === section
-              ? `<${section === 'about' ? 'About Me' : capitalize(section)} />`
-              : section === 'about'
-              ? 'About Me'
-              : capitalize(section)}
-          </a>
-        ))}
-      </nav>
-    </div>
+    <nav className="fixed top-0 w-full bg-white shadow-md z-50 flex justify-center space-x-8 p-6">
+      <Image
+        src="/images/seal (5).jpg"
+        alt="logo"
+        width={80}
+        height={50}
+        className="object-cover max-w-12 fixed left-8 top-4.5"
+      />
+      {sections.map((section) => (
+        <a
+          key={section}
+          href={`#${section}`}
+          onClick={(e) => handleClick(e, section)}
+          className={`${baseStyle} ${hoverStyle} ${
+            activeSection === section ? activeStyle : ''
+          }`}
+        >
+          {activeSection === section
+            ? `<${section === 'about' ? 'About Me' : capitalize(section)} />`
+            : section === 'about'
+            ? 'About Me'
+            : capitalize(section)}
+        </a>
+      ))}
+      <div className="fixed flex gap-3 right-10">
+        <a
+          href="https://github.com/eugene-yeooo"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="transform transition-transform duration-300 ease-in-out hover:scale-125"
+        >
+          <Image
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+            alt="GitHub"
+            width={35}
+            height={0}
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/eugeneyeooo/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="transform transition-transform duration-300 ease-in-out hover:scale-125"
+        >
+          <Image
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg"
+            alt="LinkedIn"
+            width={35}
+            height={0}
+          />
+        </a>
+      </div>
+    </nav>
   )
 }
 
