@@ -28,7 +28,7 @@ export default function AiSpy() {
 
       {/* Description */}
       <p className="text-md leading-relaxed mb-4">
-        Play '20 Questions' — pick your topic, select difficulty, and log your
+        Play 20 Questions — pick your topic, select difficulty, and log your
         game stats. Powered by <span className="font-semibold">Gemini AI</span>.
       </p>
 

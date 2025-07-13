@@ -1,6 +1,6 @@
 'use client'
 
-import { Download, Github, Linkedin, Mail, Phone, Send } from 'lucide-react'
+import { Download, Github, Mail, Phone, Send } from 'lucide-react'
 import Image from 'next/image'
 import emailjs from '@emailjs/browser'
 

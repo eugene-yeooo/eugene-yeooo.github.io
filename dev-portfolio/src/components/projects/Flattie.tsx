@@ -31,7 +31,7 @@ export default function Flattie() {
       {/* Description */}
       <p className="text-md leading-relaxed mb-4">
         Flat finance made easy — track all bills and individual flatmate
-        payments with a simple yet intuitive UI.
+        payments with a simplistic yet intuitive UI.
       </p>
 
       {/* GitHub Button */}

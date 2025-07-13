@@ -29,18 +29,19 @@ export default function Home() {
               Full-Stack Developer
             </h3>
             <p className="max-w-3xl leading-relaxed text-left text-black text-md">
-              Hey! 👋 I'm a full-stack engineer with passion for the outdoors,
-              adventure & technical skills. Based in New Zealand, I transitioned
-              into the tech industry to pursue a career that revolves around
-              problem-solving and collaboration.
+              Hey! 👋 I&#39;m a full-stack engineer with passion for the
+              outdoors, adventure & technical skills. Based in New Zealand, I
+              transitioned into the tech industry to pursue a career that
+              revolves around problem-solving and collaboration.
               <br />
               <br />
-              My journey in tech reflects how I've thrived in learning,
+              My journey in tech reflects how I&#39;ve thrived in learning,
               teaching, and working as a team on expeditions in the rock
               climbing, canyoning, caving and mountaineering space. Like getting
               people engaged with technical rope skills and the outdoors, I get
               <span className="font-bold"> ~excited~</span> from people using
-              the clean, responsive, and user-friendly applications I've built.
+              the clean, responsive, and user-friendly applications I&#39;ve
+              built.
               <br />
               <br />
               With a background in digital marketing and communications, I bring
@@ -76,7 +77,7 @@ export default function Home() {
             alt="Profile picture"
             width={100}
             height={100}
-            className="min-w-md object-cover border-white border-10"
+            className="min-w-md object-cover border-green-300 border-10"
           />
         </div>
       </section>

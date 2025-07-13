@@ -1,7 +1,9 @@
-import type { NextConfig } from "next";
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'export',
+  basePath: '/eugene-yeooo.github.io', // Replace with your actual repo name
+  assetPrefix: '/eugene-yeooo.github.io',
+  images: { unoptimized: true },
+}
 
-const nextConfig: NextConfig = {
-  /* config options here */
-};
-
-export default nextConfig;
+module.exports = nextConfig
