@@ -7,6 +7,7 @@ import MarqBackend from '@/components/skills/MarqBackend'
 import MarqStyling from '@/components/skills/MarqStyling'
 import MarqTools from '@/components/skills/MarqTools'
 import Icons from '@/components/skills/Icons'
+import Contact from '@/components/Contact'
 
 export default function Home() {
   const sectionStyle =
@@ -124,19 +125,11 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className={sectionStyle}>
-        <div className="bg-white p-8 rounded-lg shadow-lg max-w-2xl text-black">
-          <h2 className="text-4xl font-bold mb-4">&lt;Contact /&gt;</h2>
-          <p>
-            You can reach me at{' '}
-            <a
-              href="mailto:eugeneyeoooo@gmail.com"
-              className="text-blue-600 underline"
-            >
-              eugeneyeoooo@gmail.com
-            </a>
-          </p>
-        </div>
+      <section
+        id="contact"
+        className="min-h-screen p-6 scroll-mt-24 flex flex-col items-center text-center"
+      >
+        <Contact />
       </section>
 
       {/* About Section */}
