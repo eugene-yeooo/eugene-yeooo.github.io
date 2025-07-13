@@ -13,12 +13,12 @@ import ProjectBody from '@/components/projects/ProjectsBody'
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen overflow-hidden text-white">
+    <div className="relative min-h-screen overflow-hidden text-white snap-y snap-mandatory h-screen overflow-y-scroll scroll-smooth">
       <Navbar />
       {/* About Section */}
       <section
         id="about"
-        className="min-h-screen p-8 pt-24 scroll-mt-24 flex flex-col items-center justify-center text-center"
+        className="min-h-screen p-8 pt-24 scroll-mt-24 flex flex-col items-center justify-center text-center snap-start h-screen"
       >
         <div className="flex flex-col md:flex-row gap-10 items-center max-w-6xl w-full">
           <div className="p-8 rounded-lg shadow-lg max-w-3xl w-full bg-white">
@@ -84,7 +84,7 @@ export default function Home() {
       {/* Skills Section */}
       <section
         id="skills"
-        className="min-h-screen p-8 pt-18 scroll-mt-4 flex flex-col items-center justify-center text-center"
+        className="min-h-screen p-8 pt-18 scroll-mt-4 flex flex-col items-center justify-center text-center snap-start h-screen"
       >
         <div className="p-8 pt-5 pb-3 rounded-lg shadow-lg max-w-3xl w-full bg-white">
           <h2 className="text-4xl font-bold mb-6 text-black bg-green-200 py-2 font-mono px-3 inline-block">
@@ -102,7 +102,7 @@ export default function Home() {
       {/* Projects Section */}
       <section
         id="projects"
-        className="min-h-screen pt-[84px] justify-center flex flex-col items-center text-center"
+        className="min-h-screen pt-[84px] justify-center flex flex-col items-center text-center snap-start h-screen"
       >
         <ProjectBody />
       </section>
@@ -110,7 +110,7 @@ export default function Home() {
       {/* Contact Section */}
       <section
         id="contact"
-        className="min-h-screen pt-[84px] justify-center flex flex-col items-center text-center"
+        className="min-h-screen pt-[84px] justify-center flex flex-col items-center text-center snap-start h-screen"
       >
         <Contact />
       </section>
