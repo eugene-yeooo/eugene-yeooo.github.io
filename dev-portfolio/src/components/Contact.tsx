@@ -12,8 +12,8 @@ export default function Contact() {
         </h2>
 
         {/* Contact Info */}
-        <section className="flex border-b border-gray-400 mb-2">
-          <div className="text-left mb-6 space-y-2 pr-10 border-r border-gray-400">
+        <section className="flex border-b border-gray-400 mb-2 pl-3">
+          <div className="text-left mb-4 pb-2 space-y-2 pr-12 border-r border-gray-400">
             <p className="flex items-center gap-2">
               <Phone size={18} />{' '}
               <span className="font-normal">+64 22 429 0210</span>
@@ -78,7 +78,7 @@ export default function Contact() {
           />
           <input
             type="email"
-            placeholder="Subject"
+            placeholder="Your email"
             className="p-2 border border-gray-300 rounded"
             required
           />

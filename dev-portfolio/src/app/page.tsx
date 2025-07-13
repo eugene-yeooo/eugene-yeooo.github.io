@@ -8,10 +8,12 @@ import MarqStyling from '@/components/skills/MarqStyling'
 import MarqTools from '@/components/skills/MarqTools'
 import Icons from '@/components/skills/Icons'
 import Contact from '@/components/Contact'
+import Navbar from '@/components/Navbar'
 
 export default function Home() {
   return (
     <div className="relative min-h-screen overflow-hidden text-white">
+      <Navbar />
       {/* About Section */}
       <section
         id="about"
@@ -127,7 +129,7 @@ export default function Home() {
       {/* Contact Section */}
       <section
         id="contact"
-        className="min-h-screen pt-30 flex flex-col items-center text-center"
+        className="min-h-screen pt-[84px] justify-center flex flex-col items-center text-center"
       >
         <Contact />
       </section>
