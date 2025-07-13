@@ -1,0 +1,18 @@
+'use client'
+
+import Crux from './Crux'
+
+export default function ProjectBody() {
+  return (
+    <div className="text-black bg-white rounded-lg shadow-lg my-3 w-fit mx-auto flex flex-col items-center text-center">
+      <div className="">
+        <h1 className="text-3xl font-bold mt-6 mx-4 text-black bg-green-200 py-2 font-mono px-3 inline-block">
+          Projects
+        </h1>
+      </div>
+      <div className="m-5">
+        <Crux />
+      </div>
+    </div>
+  )
+}

@@ -20,7 +20,7 @@ export default function MarqStyling() {
 
   const content = [
     'HTML5',
-    'CSS',
+    'CSS3',
     'Tailwind CSS',
     'Swiper.js',
     'Vanta.js',

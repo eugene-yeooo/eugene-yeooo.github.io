@@ -9,6 +9,7 @@ import MarqTools from '@/components/skills/MarqTools'
 import Icons from '@/components/skills/Icons'
 import Contact from '@/components/Contact'
 import Navbar from '@/components/Navbar'
+import ProjectBody from '@/components/projects/ProjectsBody'
 
 export default function Home() {
   return (
@@ -101,29 +102,9 @@ export default function Home() {
       {/* Projects Section */}
       <section
         id="projects"
-        className="min-h-screen p-8 scroll-mt-24 flex flex-col items-center text-center"
+        className="min-h-screen pt-[84px] flex flex-col items-center text-center"
       >
-        <h2 className="text-4xl font-bold mb-6">&lt;Projects /&gt;</h2>
-        <div className="space-y-8 max-w-4xl">
-          <div className="bg-white/10 p-6 rounded-lg">
-            <h3 className="text-2xl font-semibold">Crux</h3>
-            <p className="text-gray-300 mt-2">
-              A logbook web app for documenting outdoor adventures. Users can
-              create and edit logs across multiple sport types including caving
-              and climbing. Built with React, Node.js, Express, and Knex.
-            </p>
-          </div>
-
-          <div className="bg-white/10 p-6 rounded-lg">
-            <h3 className="text-2xl font-semibold">FlatFunds</h3>
-            <p className="text-gray-300 mt-2">
-              A bill-splitting app designed for flatmates to track shared
-              expenses. Features custom inputs, payment tracking, and automated
-              split calculations. Built during Dev Academy using a full-stack
-              JavaScript stack.
-            </p>
-          </div>
-        </div>
+        <ProjectBody />
       </section>
 
       {/* Contact Section */}
