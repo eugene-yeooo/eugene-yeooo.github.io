@@ -20,7 +20,7 @@ export default function Home() {
         id="about"
         className="min-h-screen p-8 pt-24 scroll-mt-24 flex flex-col items-center justify-center text-center snap-start h-screen"
       >
-        <div className="flex flex-col md:flex-row gap-10 items-center max-w-6xl w-full">
+        <div className="flex flex-col md:flex-row gap-10 items-center max-w-7xl w-full">
           <div className="p-8 rounded-lg shadow-lg max-w-3xl w-full bg-white">
             <h2 className="text-5xl font-black text-black bg-green-200 py-2 font-mono max-w-fit px-3">
               EUGENE
