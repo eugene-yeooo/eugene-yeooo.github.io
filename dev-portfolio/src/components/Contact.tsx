@@ -86,7 +86,7 @@ export default function Contact() {
 
         {/* Contact Form */}
         <h1 className="font-mono font-semibold text-xl mb-1 pt-1">
-          Let's chat about tech 👇
+          Let&#39;s chat about tech 👇
         </h1>
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
           <input
