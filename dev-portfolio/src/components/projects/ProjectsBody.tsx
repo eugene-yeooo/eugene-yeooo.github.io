@@ -10,7 +10,7 @@ export default function ProjectBody() {
     <div className="text-black bg-white rounded-lg shadow-lg my-3 w-fit mx-auto flex sm:max-w-7xl flex-col items-center text-center">
       <div className="">
         <h1 className="text-3xl font-bold mt-6 mx-4 text-black bg-green-200 py-2 font-mono px-3 inline-block">
-          Projects
+          Full-Stack Projects
         </h1>
       </div>
       <div className="m-5 mb-8 flex gap-4">

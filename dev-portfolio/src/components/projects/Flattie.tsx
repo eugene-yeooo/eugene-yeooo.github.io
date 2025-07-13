@@ -18,7 +18,7 @@ export default function Flattie() {
       </div>
 
       {/* Title */}
-      <h3 className="text-3xl font-black font-sans mb-1 text-amber-900">
+      <h3 className="text-3xl font-black font-sans mt-4 mb-4 text-amber-900">
         flatt.ie
       </h3>
 
@@ -30,8 +30,8 @@ export default function Flattie() {
 
       {/* Description */}
       <p className="text-md leading-relaxed mb-4">
-        Crux is a full-stack app for logging outdoor adventures. Features
-        multi-sport log forms, image uploads, and responsive UI.
+        Flat finance made easy — track all bills and individual flatmate
+        payments with a simple yet intuitive UI.
       </p>
 
       {/* GitHub Button */}
@@ -39,7 +39,7 @@ export default function Flattie() {
         href="https://github.com/eugene-yeooo/flatt.ie"
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex items-center text-sm gap-2 border-2 border-black text-black font-bold px-3 py-2 rounded hover:bg-green-200 hover:border-white hover:text-black transition"
+        className="inline-flex items-center text-sm gap-2 border-2 border-black text-black font-bold px-3 py-2 rounded hover:bg-green-200 hover:border-white hover:text-black transition mt-auto mb-2"
       >
         <Github size={20} />
         View on GitHub

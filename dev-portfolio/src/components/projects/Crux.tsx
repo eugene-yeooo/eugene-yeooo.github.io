@@ -28,7 +28,7 @@ export default function Crux() {
 
       {/* Description */}
       <p className="text-md leading-relaxed mb-4">
-        Crux is a full-stack app for logging outdoor adventures. Features
+        A social media platform for logging outdoor adventures. Features
         multi-sport log forms, image uploads, and responsive UI.
       </p>
 
@@ -37,7 +37,7 @@ export default function Crux() {
         href="https://github.com/eugene-yeooo/crux"
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex items-center text-sm gap-2 border-2 border-black text-black font-bold px-3 py-2 rounded hover:bg-green-200 hover:border-white hover:text-black transition"
+        className="inline-flex items-center text-sm gap-2 border-2 border-black text-black font-bold px-3 py-2 rounded hover:bg-green-200 hover:border-white hover:text-black transition mt-auto mb-2"
       >
         <Github size={20} />
         View on GitHub

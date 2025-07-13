@@ -51,6 +51,7 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 w-full bg-white shadow-md z-50 flex justify-center space-x-8 p-6">
+      {/* LOGO */}
       <Image
         src="/images/seal (5).jpg"
         alt="logo"
@@ -58,6 +59,9 @@ const Navbar = () => {
         height={50}
         className="object-cover max-w-12 fixed left-8 top-4.5"
       />
+      {/* <h1>Eugene Yeo</h1> */}
+
+      {/* NAV */}
       {sections.map((section) => (
         <a
           key={section}
@@ -74,7 +78,9 @@ const Navbar = () => {
             : capitalize(section)}
         </a>
       ))}
-      <div className="fixed flex gap-3 right-10">
+
+      {/* EXTERNAL LINKS */}
+      <div className="fixed flex gap-3 right-14">
         <a
           href="https://github.com/eugene-yeooo"
           target="_blank"
