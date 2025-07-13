@@ -7,7 +7,7 @@ export default function Flattie() {
   return (
     <div className="border-2 text-black rounded-lg shadow-xl p-3 max-w-sm w-full flex flex-col items-center text-center transform transition-transform duration-300 ease-in-out hover:scale-105">
       {/* Project Image */}
-      <div className="mb-2 overflow-hidden w-full">
+      <div className="mb-2 overflow-hidden w-full rounded-lg transform transition-transform duration-300 ease-in-out hover:scale-200">
         <Image
           src="/images/mockup_flattie.jpg"
           alt="Flatt.ie mockup"
@@ -31,7 +31,8 @@ export default function Flattie() {
       {/* Description */}
       <p className="text-md leading-relaxed mb-4">
         Flat finance made easy — track all bills and individual flatmate
-        payments with a simplistic yet intuitive UI.
+        payments with a simplistic yet intuitive UI, including extensive search
+        functionality.
       </p>
 
       {/* GitHub Button */}
