@@ -83,9 +83,9 @@ export default function Home() {
       {/* Skills Section */}
       <section
         id="skills"
-        className="min-h-screen p-8 pt-10 scroll-mt-4 flex flex-col items-center justify-center text-center"
+        className="min-h-screen p-8 pt-18 scroll-mt-4 flex flex-col items-center justify-center text-center"
       >
-        <div className="p-8 rounded-lg shadow-lg max-w-3xl w-full bg-white">
+        <div className="p-8 pt-5 pb-3 rounded-lg shadow-lg max-w-3xl w-full bg-white">
           <h2 className="text-4xl font-bold mb-6 text-black bg-green-200 py-2 font-mono px-3 inline-block">
             Skills
           </h2>

@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export default function Icons() {
   return (
-    <div className="mb-1 grid grid-cols-9 gap-2 gap-y-2 max-w-2xl mx-auto">
+    <div className="grid grid-cols-9 gap-2 gap-y-2 max-w-xl mx-auto">
       <Image
         src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg"
         alt="HTML5"
@@ -71,8 +71,8 @@ export default function Icons() {
         className="object-cover"
       />
       <Image
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/framermotion/framermotion-original-wordmark.svg"
-        alt="Framer Motion"
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg"
+        alt="Express"
         width={80}
         height={80}
         className="object-cover"
@@ -121,8 +121,8 @@ export default function Icons() {
       />
 
       <Image
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg"
-        alt="Express"
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/framermotion/framermotion-original-wordmark.svg"
+        alt="Framer Motion"
         width={80}
         height={80}
         className="object-cover"
