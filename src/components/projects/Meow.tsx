@@ -29,11 +29,13 @@ export default function Meow() {
       </p> */}
 
       {/* Description */}
-      <p className="text-md leading-relaxed mb-3">
+      <p className="text-md leading-relaxed mb-2">
         A motivational cat poster generator.
-        <br />
-        Implemented clean UI for uploading images and swiper carousel for
-        displaying user content.
+      </p>
+      <p>
+        I experimented with Swiper.js, Dropzone, Multer and Cloudinary —
+        implemented clean UI for uploading images, backend file management and
+        swiper carousel for displaying user content.
       </p>
 
       {/* GitHub Button */}

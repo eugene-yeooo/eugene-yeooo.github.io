@@ -27,9 +27,13 @@ export default function Crux() {
       </p>
 
       {/* Description */}
-      <p className="text-md leading-relaxed mb-4">
+      <p className="text-md leading-relaxed mb-2">
         A social media platform for logging outdoor adventures. Features
         multi-sport log forms, image uploads, and responsive UI.
+      </p>
+      <p className="mb-5">
+        Created as a personal logbook, evolving to address the gap in the caving
+        and canyoning market.
       </p>
 
       {/* GitHub Button */}

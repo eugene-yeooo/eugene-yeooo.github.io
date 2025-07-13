@@ -27,9 +27,13 @@ export default function AiSpy() {
       </p> */}
 
       {/* Description */}
-      <p className="text-md leading-relaxed mb-4">
-        Play 20 Questions — pick your topic, select difficulty, and log your
-        game stats. Powered by <span className="font-semibold">Gemini AI</span>.
+      <p className="text-md leading-relaxed mb-2">
+        Play 20 Questions against AI — pick your topic, select difficulty, and
+        log your game stats.
+      </p>
+      <p>
+        An fun opportunity to explore and experiment with
+        <span className="font-semibold"> Gemini AI</span>.
       </p>
 
       {/* GitHub Button */}
