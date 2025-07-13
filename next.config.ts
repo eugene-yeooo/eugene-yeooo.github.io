@@ -1,10 +1,9 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
   images: {
     unoptimized: true,
   },
-  assetPrefix: './',
+  // No assetPrefix needed for username.github.io sites
 }
 
 export default nextConfig
