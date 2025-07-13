@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 
 const sections = ['about', 'skills', 'projects', 'contact']
@@ -49,24 +50,33 @@ const Navbar = () => {
   const hoverStyle = 'hover:bg-green-200'
 
   return (
-    <nav className="fixed top-0 w-full bg-white shadow-md z-50 flex justify-center space-x-8 p-6">
-      {sections.map((section) => (
-        <a
-          key={section}
-          href={`#${section}`}
-          onClick={(e) => handleClick(e, section)}
-          className={`${baseStyle} ${hoverStyle} ${
-            activeSection === section ? activeStyle : ''
-          }`}
-        >
-          {activeSection === section
-            ? `<${section === 'about' ? 'About Me' : capitalize(section)} />`
-            : section === 'about'
-            ? 'About Me'
-            : capitalize(section)}
-        </a>
-      ))}
-    </nav>
+    <div>
+      <nav className="fixed top-0 w-full bg-white shadow-md z-50 flex justify-center space-x-8 p-6">
+        <Image
+          src="/images/seal (5).jpg"
+          alt="logo"
+          width={80}
+          height={50}
+          className="object-cover max-w-12 fixed left-10 top-4.5"
+        />
+        {sections.map((section) => (
+          <a
+            key={section}
+            href={`#${section}`}
+            onClick={(e) => handleClick(e, section)}
+            className={`${baseStyle} ${hoverStyle} ${
+              activeSection === section ? activeStyle : ''
+            }`}
+          >
+            {activeSection === section
+              ? `<${section === 'about' ? 'About Me' : capitalize(section)} />`
+              : section === 'about'
+              ? 'About Me'
+              : capitalize(section)}
+          </a>
+        ))}
+      </nav>
+    </div>
   )
 }
 

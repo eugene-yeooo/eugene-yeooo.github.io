@@ -1,6 +1,9 @@
 'use client'
 
+import AiSpy from './AiSpy'
 import Crux from './Crux'
+import Flattie from './Flattie'
+import Meow from './Meow'
 
 export default function ProjectBody() {
   return (
@@ -10,8 +13,11 @@ export default function ProjectBody() {
           Projects
         </h1>
       </div>
-      <div className="m-5">
+      <div className="m-5 mb-8 flex gap-4">
         <Crux />
+        <Flattie />
+        <Meow />
+        <AiSpy />
       </div>
     </div>
   )

@@ -102,7 +102,7 @@ export default function Home() {
       {/* Projects Section */}
       <section
         id="projects"
-        className="min-h-screen pt-[84px] flex flex-col items-center text-center"
+        className="min-h-screen pt-[84px] justify-center flex flex-col items-center text-center"
       >
         <ProjectBody />
       </section>

@@ -3,14 +3,14 @@
 import Image from 'next/image'
 import { Github } from 'lucide-react'
 
-export default function Crux() {
+export default function Meow() {
   return (
     <div className="border text-black rounded-lg shadow-lg p-3 max-w-sm w-full flex flex-col items-center text-center">
       {/* Project Image */}
       <div className="mb-2 overflow-hidden w-full">
         <Image
-          src="/images/mockup_crux.jpg"
-          alt="Crux mockup"
+          src="/images/mockup_meow.jpg"
+          alt="Meowtivations mockup"
           width={800}
           height={500}
           className="object-cover w-full h-auto"
@@ -18,13 +18,13 @@ export default function Crux() {
       </div>
 
       {/* Title */}
-      <h3 className="text-4xl font-black font-sans mb-1">crux</h3>
+      <h3 className="text-4xl font-black font-sans mb-1">Meowtivations</h3>
 
       {/* Subheader */}
 
-      <p className="italic font-mono text-sm text-gray-600 mb-3">
+      {/* <p className="italic font-mono text-sm text-gray-600 mb-3">
         Work in Progress
-      </p>
+      </p> */}
 
       {/* Description */}
       <p className="text-md leading-relaxed mb-4">
