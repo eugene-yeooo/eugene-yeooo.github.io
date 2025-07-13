@@ -13,7 +13,7 @@ export default function ProjectBody() {
           Full-Stack Projects
         </h1>
       </div>
-      <div className="m-5 mb-8 flex gap-4">
+      <div className="mt-5 m-8 flex gap-4">
         <Crux />
         <Flattie />
         <Meow />

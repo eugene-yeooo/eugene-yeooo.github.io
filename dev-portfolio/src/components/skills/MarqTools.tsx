@@ -17,6 +17,7 @@ export default function MarqBackend() {
     'Turbopack',
     'VS Code',
     'Render',
+    'EmailJS',
   ]
 
   const itemStyle =

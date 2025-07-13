@@ -2,8 +2,27 @@
 
 import { Download, Github, Linkedin, Mail, Phone, Send } from 'lucide-react'
 import Image from 'next/image'
+import emailjs from '@emailjs/browser'
 
 export default function Contact() {
+  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    emailjs
+      .sendForm(
+        'service_x8x8x8x',
+        'template_sfh7ofj',
+        e.currentTarget,
+        'qCilGX1yHdQnMAWtg'
+      )
+      .then(
+        () => {
+          alert('Message sent!')
+        },
+        (error) => {
+          console.error('Error sending email:', error)
+        }
+      )
+  }
+
   return (
     <section>
       <div className="bg-white p-8 rounded-lg shadow-lg min-w-xl w-full text-black">
@@ -69,21 +88,24 @@ export default function Contact() {
         <h1 className="font-mono font-semibold text-xl mb-1 pt-1">
           Let's chat about tech 👇
         </h1>
-        <form className="flex flex-col gap-4">
+        <form onSubmit={handleSubmit} className="flex flex-col gap-4">
           <input
             type="text"
+            name="name"
             placeholder="Your name"
             className="p-2 border border-gray-300 rounded"
             required
           />
           <input
             type="email"
+            name="email"
             placeholder="Your email"
             className="p-2 border border-gray-300 rounded"
             required
           />
           <textarea
             placeholder="Your message"
+            name="message"
             className="p-2 border border-gray-300 rounded"
             rows={5}
             required
