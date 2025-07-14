@@ -7,7 +7,7 @@ export default function Crux() {
   return (
     <div className="bg-white h-full border-2 text-black rounded-lg shadow-xl p-3 max-w-sm w-full flex flex-col items-center text-center transform transition-transform duration-300 ease-in-out hover:scale-105">
       {/* Project Image */}
-      <div className="mb-2 overflow-hidden w-full rounded-lg transform transition-transform duration-300 ease-in-out hover:scale-200">
+      <div className="mb-2 overflow-hidden w-full rounded-lg transform transition-transform duration-300 ease-in-out hover:scale-200 hover:border">
         <Image
           src="/images/mockup_crux.jpg"
           alt="Crux mockup"

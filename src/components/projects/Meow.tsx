@@ -7,7 +7,7 @@ export default function Meow() {
   return (
     <div className="bg-white h-full border-2 text-black rounded-lg shadow-xl p-3 max-w-sm w-full flex flex-col items-center text-center transform transition-transform duration-300 ease-in-out hover:scale-105">
       {/* Project Image */}
-      <div className="mb-2 overflow-hidden w-full rounded-lg transform transition-transform duration-300 ease-in-out hover:scale-200">
+      <div className="mb-2 overflow-hidden w-full rounded-lg transform transition-transform duration-300 ease-in-out hover:scale-200 hover:border">
         <Image
           src="/images/mockup_meow.jpg"
           alt="Meowtivations mockup"
@@ -34,7 +34,7 @@ export default function Meow() {
       </p>
       <p>
         I experimented with Swiper.js, Dropzone, Multer and Cloudinary —
-        implemented clean UI for uploading images, backend file management and
+        implemented clean UI for uploading images, backend file management, and
         swiper carousel for displaying user content.
       </p>
 
