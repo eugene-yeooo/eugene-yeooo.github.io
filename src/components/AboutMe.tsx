@@ -7,7 +7,12 @@ import { motion } from 'framer-motion'
 export default function AboutMe() {
   return (
     <div className="flex flex-col md:flex-row gap-10 items-center max-w-7xl w-full">
-      <div className="p-8 rounded-lg shadow-lg max-w-3xl w-full bg-white">
+      <motion.div
+        initial={{ y: 0, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ delay: 0, duration: 1, ease: 'easeOut' }}
+        className="p-8 rounded-lg shadow-lg max-w-3xl w-full bg-white"
+      >
         <motion.h2
           initial={{ x: -400, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
@@ -53,23 +58,22 @@ export default function AboutMe() {
         </motion.p>
 
         {/* buttons */}
-        <div className="mt-6 flex flex-col sm:flex-row gap-4">
-          <motion.a
-            initial={{ y: 50, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 2, duration: 1, ease: 'easeOut' }}
+        <motion.div
+          initial={{ y: 50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 2, duration: 1, ease: 'easeOut' }}
+          className="mt-6 flex flex-col sm:flex-row gap-4"
+        >
+          <a
             href="/Eugene Yeo_CV.pdf"
             download
             className=" bg-black text-white font-bold px-4 py-2 rounded hover:bg-green-200 hover:text-black hover:font-bold transition flex items-center gap-2"
           >
             <Download size={20} />
             Download CV
-          </motion.a>
+          </a>
 
-          <motion.button
-            initial={{ y: 50, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 2.2, duration: 1, ease: 'easeOut' }}
+          <button
             onClick={() => {
               const el = document.getElementById('contact')
               el?.scrollIntoView({ behavior: 'smooth' })
@@ -78,18 +82,24 @@ export default function AboutMe() {
           >
             <Send size={20} />
             Contact Me
-          </motion.button>
-        </div>
-      </div>
+          </button>
+        </motion.div>
+      </motion.div>
 
       {/* Profile Image */}
-      <Image
-        src="/images/DSC04088.avif"
-        alt="Profile picture"
-        width={100}
-        height={100}
-        className="min-w-md object-cover border-green-300 border-10 "
-      />
+      <motion.div
+        initial={{ x: 400, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ delay: 0.8, duration: 1, ease: 'easeOut' }}
+      >
+        <Image
+          src="/images/DSC04088.avif"
+          alt="Profile picture"
+          width={100}
+          height={100}
+          className="min-w-md object-cover border-green-300 border-10 "
+        />
+      </motion.div>
     </div>
   )
 }
