@@ -11,7 +11,7 @@ export default function AboutMe() {
         initial={{ y: 0, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 2, duration: 1, ease: 'easeOut' }}
-        className="p-8 rounded-lg shadow-lg max-w-3xl w-full bg-white"
+        className="p-8 rounded-lg shadow-lg max-w-3xl w-full bg-white translate-y-3"
       >
         <motion.h2
           initial={{ x: -400, opacity: 0 }}
@@ -30,40 +30,42 @@ export default function AboutMe() {
         >
           Full-Stack Developer
         </motion.h3>
-        <motion.p
+        <motion.div
           initial={{ y: 0, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 4, duration: 1, ease: 'easeOut' }}
           className="max-w-3xl leading-relaxed text-left text-black text-md"
         >
-          Hey! 👋 I build full-stack web applications that combine clean
-          interfaces with robust, scalable backend systems and smart AI
-          integration. From crafting intuitive frontends to architecting
-          efficient APIs and databases, I love creating seamless, end-to-end
-          experiences that make complex tech feel simple and human-centered.
-          <br />
-          <br />
-          My drive for tech reflects my passion for technical rock climbing,
-          canyoning and caving — for the learning, teaching, problem-solving and
-          team work involved. Like getting people outdoors,{' '}
-          <span className="font-semibold">
-            I get excited from people using the applications I&#39;ve built
-          </span>
-          .
-          <br />
-          <br />
-          With digital marketing and communications experience{' '}
-          <a
-            href="https://eugeneyeo.myportfolio.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-cyan-500 underline hover:text-cyan-700 transition"
-          >
-            from another life
-          </a>
-          , I bring a creative mindset, strong human skills, fast learning, and
-          sharp attention to detail to project collaborations.
-        </motion.p>
+          <p className="pb-4">
+            Hey! 👋 I build full-stack web applications that combine clean
+            interfaces with robust, scalable backend systems and smart AI
+            integration. From crafting intuitive frontends to architecting
+            efficient APIs and databases, I love creating seamless, end-to-end
+            experiences that make complex tech feel simple and human-centered.
+          </p>
+          <p className="pb-4">
+            My drive for tech reflects my passion for technical rock climbing,
+            canyoning and caving — for the learning, teaching, problem-solving
+            and team work involved. Like getting people outdoors,{' '}
+            <span className="font-semibold">
+              I get excited from people using the applications I&#39;ve built
+            </span>
+            .
+          </p>
+          <p className="pb-1">
+            With digital marketing and communications experience{' '}
+            <a
+              href="https://eugeneyeo.myportfolio.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-cyan-500 underline hover:text-cyan-700 transition"
+            >
+              from another life
+            </a>
+            , I bring a creative mindset, strong human skills, fast learning,
+            and sharp attention to detail to project collaborations.
+          </p>
+        </motion.div>
 
         {/* buttons */}
         <motion.div
