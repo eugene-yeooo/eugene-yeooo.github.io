@@ -25,7 +25,12 @@ export default function AboutMe() {
         >
           Full-Stack Developer
         </motion.h3>
-        <p className="max-w-3xl leading-relaxed text-left text-black text-md">
+        <motion.p
+          initial={{ y: 0, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 2, duration: 1, ease: 'easeOut' }}
+          className="max-w-3xl leading-relaxed text-left text-black text-md"
+        >
           Hey! 👋 I build full-stack web applications that combine clean
           interfaces with robust, scalable backend systems and smart AI
           integration. From crafting intuitive frontends to architecting
@@ -45,25 +50,26 @@ export default function AboutMe() {
           With digital marketing and communications experience from another
           life, I bring a creative mindset, strong human skills, fast learning,
           and sharp attention to detail to project collaborations.
-        </p>
+        </motion.p>
 
         {/* buttons */}
-        <motion.div
-          initial={{ y: 50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 2, duration: 1, ease: 'easeOut' }}
-          className="mt-6 flex flex-col sm:flex-row gap-4"
-        >
-          <a
+        <div className="mt-6 flex flex-col sm:flex-row gap-4">
+          <motion.a
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 2, duration: 1, ease: 'easeOut' }}
             href="/Eugene Yeo_CV.pdf"
             download
             className=" bg-black text-white font-bold px-4 py-2 rounded hover:bg-green-200 hover:text-black hover:font-bold transition flex items-center gap-2"
           >
             <Download size={20} />
             Download CV
-          </a>
+          </motion.a>
 
-          <button
+          <motion.button
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 2.2, duration: 1, ease: 'easeOut' }}
             onClick={() => {
               const el = document.getElementById('contact')
               el?.scrollIntoView({ behavior: 'smooth' })
@@ -72,8 +78,8 @@ export default function AboutMe() {
           >
             <Send size={20} />
             Contact Me
-          </button>
-        </motion.div>
+          </motion.button>
+        </div>
       </div>
 
       {/* Profile Image */}
