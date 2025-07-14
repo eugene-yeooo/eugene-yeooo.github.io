@@ -5,6 +5,7 @@ import AiSpy from './AiSpy'
 import Crux from './Crux'
 import Flattie from './Flattie'
 import Meow from './Meow'
+import type { Variants } from 'framer-motion'
 
 // Animation variants
 const containerVariants = {
@@ -17,7 +18,7 @@ const containerVariants = {
   },
 }
 
-const cardVariants = {
+const cardVariants: Variants = {
   hidden: { opacity: 0, x: 400, y: 50 },
   visible: {
     opacity: 1,
