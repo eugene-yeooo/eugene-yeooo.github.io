@@ -32,7 +32,7 @@ export default function AiSpy() {
         log your game stats.
       </p>
       <p>
-        An fun opportunity to explore
+        A fun opportunity to explore
         <span className="font-semibold"> Gemini AI</span> and experiment with AI
         powered interfaces. .
       </p>
