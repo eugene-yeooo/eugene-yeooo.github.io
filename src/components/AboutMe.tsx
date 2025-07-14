@@ -13,9 +13,15 @@ export default function AboutMe() {
   const pOneRef = useRef<HTMLParagraphElement>(null)
   const titleRef = useRef<HTMLHeadingElement>(null)
 
+  const scrambleLock = useRef(false)
+
   const scrambleP = () => {
     const el = pOneRef.current
     if (!el) return
+
+    if (!el || scrambleLock.current) return
+
+    scrambleLock.current = true // block further hovers
 
     const fullHeight = el.scrollHeight
     el.style.height = `${fullHeight}px`
@@ -35,6 +41,9 @@ export default function AboutMe() {
         el.style.height = ''
         el.style.minHeight = ''
         el.style.overflow = ''
+        setTimeout(() => {
+          scrambleLock.current = false
+        }, 100) //set how long before effect can work again
       },
     })
   }
