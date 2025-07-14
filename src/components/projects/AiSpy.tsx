@@ -34,7 +34,7 @@ export default function AiSpy() {
       <p>
         A fun opportunity to explore
         <span className="font-semibold"> Gemini AI</span> and experiment with AI
-        powered interfaces. .
+        powered interfaces.
       </p>
 
       {/* GitHub Button */}
