@@ -5,7 +5,7 @@ import { Github } from 'lucide-react'
 
 export default function Crux() {
   return (
-    <div className="border-2 text-black rounded-lg shadow-xl p-3 max-w-sm w-full flex flex-col items-center text-center transform transition-transform duration-300 ease-in-out hover:scale-105">
+    <div className="bg-white h-full border-2 text-black rounded-lg shadow-xl p-3 max-w-sm w-full flex flex-col items-center text-center transform transition-transform duration-300 ease-in-out hover:scale-105">
       {/* Project Image */}
       <div className="mb-2 overflow-hidden w-full rounded-lg transform transition-transform duration-300 ease-in-out hover:scale-200">
         <Image
@@ -29,7 +29,7 @@ export default function Crux() {
       {/* Description */}
       <p className="text-md leading-relaxed mb-2">
         A social media platform for logging outdoor adventures. Features
-        multi-sport log forms, image uploads, and responsive UI.
+        multi-sport log forms, image uploads, and responsive UX.
       </p>
       <p className="mb-5">
         Created as a personal logbook, evolving to address the gap in the caving

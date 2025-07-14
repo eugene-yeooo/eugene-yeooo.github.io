@@ -1,9 +1,35 @@
 'use client'
 
+import { motion } from 'framer-motion'
 import AiSpy from './AiSpy'
 import Crux from './Crux'
 import Flattie from './Flattie'
 import Meow from './Meow'
+
+// Animation variants
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.3,
+    },
+  },
+}
+
+const cardVariants = {
+  hidden: { opacity: 0, x: 400, y: 50 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    y: 0,
+    transition: {
+      type: 'tween', // smoother than spring
+      ease: 'easeInOut', // smoother curve
+      duration: 1.2, // slow it down a bit
+    },
+  },
+}
 
 export default function ProjectBody() {
   return (
@@ -13,12 +39,28 @@ export default function ProjectBody() {
           Full-Stack Projects
         </h1>
       </div>
-      <div className="mt-5 m-8 flex gap-4">
-        <Crux />
-        <Flattie />
-        <Meow />
-        <AiSpy />
-      </div>
+
+      {/* Animated project cards container */}
+      <motion.div
+        className="mt-5 m-8 flex gap-4 items-stretch"
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
+        <motion.div variants={cardVariants}>
+          <Crux />
+        </motion.div>
+        <motion.div variants={cardVariants}>
+          <Flattie />
+        </motion.div>
+        <motion.div variants={cardVariants}>
+          <Meow />
+        </motion.div>
+        <motion.div variants={cardVariants}>
+          <AiSpy />
+        </motion.div>
+      </motion.div>
     </div>
   )
 }

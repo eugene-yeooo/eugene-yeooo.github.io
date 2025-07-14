@@ -6,17 +6,17 @@ import { motion } from 'framer-motion'
 
 export default function AboutMe() {
   return (
-    <div className="flex flex-col md:flex-row gap-10 items-center max-w-7xl w-full">
+    <div className="flex flex-col md:flex-row gap-10 items-center max-w-7xl w-full h-full">
       <motion.div
         initial={{ y: 0, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ delay: 0, duration: 1, ease: 'easeOut' }}
+        transition={{ delay: 2, duration: 1, ease: 'easeOut' }}
         className="p-8 rounded-lg shadow-lg max-w-3xl w-full bg-white"
       >
         <motion.h2
           initial={{ x: -400, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 1, ease: 'easeOut' }}
+          transition={{ delay: 3, duration: 1, ease: 'easeOut' }}
           className="text-5xl font-black text-black bg-green-200 py-2 font-mono max-w-fit px-3"
         >
           EUGENE
@@ -25,7 +25,7 @@ export default function AboutMe() {
         <motion.h3
           initial={{ y: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 1, duration: 1, ease: 'easeOut' }}
+          transition={{ delay: 3.5, duration: 1, ease: 'easeOut' }}
           className="text-4xl font-black mb-4 text-black py-2 font-mono max-w-fit"
         >
           Full-Stack Developer
@@ -33,7 +33,7 @@ export default function AboutMe() {
         <motion.p
           initial={{ y: 0, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 2, duration: 1, ease: 'easeOut' }}
+          transition={{ delay: 4, duration: 1, ease: 'easeOut' }}
           className="max-w-3xl leading-relaxed text-left text-black text-md"
         >
           Hey! 👋 I build full-stack web applications that combine clean
@@ -52,16 +52,24 @@ export default function AboutMe() {
           .
           <br />
           <br />
-          With digital marketing and communications experience from another
-          life, I bring a creative mindset, strong human skills, fast learning,
-          and sharp attention to detail to project collaborations.
+          With digital marketing and communications experience{' '}
+          <a
+            href="https://eugeneyeo.myportfolio.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-cyan-500 underline hover:text-cyan-700 transition"
+          >
+            from another life
+          </a>
+          , I bring a creative mindset, strong human skills, fast learning, and
+          sharp attention to detail to project collaborations.
         </motion.p>
 
         {/* buttons */}
         <motion.div
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 2, duration: 1, ease: 'easeOut' }}
+          transition={{ delay: 4.5, duration: 1, ease: 'easeOut' }}
           className="mt-6 flex flex-col sm:flex-row gap-4"
         >
           <a
@@ -90,7 +98,7 @@ export default function AboutMe() {
       <motion.div
         initial={{ x: 400, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
-        transition={{ delay: 0.8, duration: 1, ease: 'easeOut' }}
+        transition={{ delay: 2.8, duration: 1, ease: 'easeOut' }}
       >
         <Image
           src="/images/DSC04088.avif"
