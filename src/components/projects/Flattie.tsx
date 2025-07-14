@@ -30,11 +30,14 @@ export default function Flattie() {
 
       {/* Description */}
       <p className="text-md leading-relaxed mb-2">
-        Flat finance made easy — track all bills and individual flatmate
-        payments with a simplistic yet intuitive UI, including extensive search
-        and split calculations functionality.
+        Flat finance made easy! Track bills & individual flatmate payments with
+        simplistic yet intuitive UI, including split calculations & search
+        functionalities.
       </p>
-      <p>Created to replace my bleak excel spreadsheet alternative.</p>
+      <p>
+        Created to replace my bleak excel spreadsheet ft. fun raining emoji
+        animations.
+      </p>
 
       {/* GitHub Button */}
       <a
