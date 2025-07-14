@@ -22,7 +22,8 @@ export default function RootLayout({
               <br />
               <br />
               For the full experience, <br />
-              please use a desktop or enlarge your window.
+              please use a desktop or <br />
+              enlarge your window.
             </p>
           </div>
         ) : (
