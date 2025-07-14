@@ -3,8 +3,55 @@
 import Image from 'next/image'
 import { Download, Send } from 'lucide-react'
 import { motion } from 'framer-motion'
+import { gsap } from 'gsap'
+import { ScrambleTextPlugin } from 'gsap/ScrambleTextPlugin'
+import { useRef } from 'react'
+
+gsap.registerPlugin(ScrambleTextPlugin)
 
 export default function AboutMe() {
+  const pOneRef = useRef<HTMLParagraphElement>(null)
+  const titleRef = useRef<HTMLHeadingElement>(null)
+
+  const scrambleP = () => {
+    const el = pOneRef.current
+    if (!el) return
+
+    const fullHeight = el.scrollHeight
+    el.style.height = `${fullHeight}px`
+    el.style.minHeight = `${fullHeight}px`
+    el.style.overflow = 'hidden'
+
+    gsap.to(el, {
+      duration: 5,
+      scrambleText: {
+        text: el.innerText,
+        chars: '10',
+        revealDelay: 0.8,
+        speed: 0.5,
+      },
+      ease: 'power3.out',
+      onComplete: () => {
+        el.style.height = ''
+        el.style.minHeight = ''
+        el.style.overflow = ''
+      },
+    })
+  }
+
+  const scrambleTitle = () => {
+    gsap.to(titleRef.current, {
+      duration: 4,
+      scrambleText: {
+        text: 'Full-Stack Developer',
+        chars: '10',
+        // chars: 'ABCDEFGHIJKLMNOPQRSTUV1234567890!@#$%&*=+',
+        revealDelay: 0.8,
+        speed: 0.5,
+      },
+      ease: 'power3.out',
+    })
+  }
   return (
     <div className="flex flex-col md:flex-row gap-10 items-center max-w-7xl w-full h-full">
       <motion.div
@@ -23,6 +70,8 @@ export default function AboutMe() {
         </motion.h2>
 
         <motion.h3
+          ref={titleRef}
+          onMouseEnter={scrambleTitle}
           initial={{ y: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 3.5, duration: 1, ease: 'easeOut' }}
@@ -36,7 +85,11 @@ export default function AboutMe() {
           transition={{ delay: 4, duration: 1, ease: 'easeOut' }}
           className="max-w-3xl leading-relaxed text-left text-black text-md"
         >
-          <p className="pb-4">
+          <p
+            ref={pOneRef}
+            onMouseEnter={scrambleP}
+            className="pb-4 break-words whitespace-normal w-full max-w-full transition-[height] duration-500 ease-in-out leading-[1.6]"
+          >
             Hey! 👋 I build full-stack web applications that combine clean
             interfaces with robust, scalable backend systems and smart AI
             integration. From crafting intuitive frontends to architecting
