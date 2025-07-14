@@ -19,6 +19,7 @@ export default function RootLayout({
             <p className="text-xl font-semibold max-w-md font-mono">
               This site is best viewed on a larger screen.
               <br />
+              <br />
               Please use a tablet or desktop for the full experience.
             </p>
           </div>
