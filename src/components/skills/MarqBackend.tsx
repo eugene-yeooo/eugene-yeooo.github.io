@@ -8,6 +8,7 @@ export default function MarqBackend() {
   const scrollRef = useRef<HTMLDivElement>(null)
 
   const content = [
+    'Node.js',
     'Express.js',
     'Knex.js',
     'SQLite',
