@@ -103,7 +103,8 @@ export default function AboutMe() {
             interfaces with robust, scalable backend systems and smart AI
             integration. From crafting intuitive frontends to architecting
             efficient APIs and databases, I love creating seamless, end-to-end
-            experiences that make complex tech feel simple and human-centered.
+            experiences that make complex tech feel simple, aesthetic and
+            human-centered.
           </p>
           <p className="pb-4">
             My drive for tech reflects my passion for technical rock climbing,
