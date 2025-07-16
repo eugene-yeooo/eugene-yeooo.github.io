@@ -90,8 +90,9 @@ const Navbar = () => {
           <Image
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
             alt="GitHub"
-            width={35}
+            width={38}
             height={0}
+            className="-translate-y-0.5 translate-x-0.5"
           />
         </a>
         <a
@@ -106,6 +107,14 @@ const Navbar = () => {
             width={35}
             height={0}
           />
+        </a>
+        <a
+          href="https://www.instagram.com/eugeneyeooo"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="transform transition-transform duration-300 ease-in-out hover:scale-125"
+        >
+          <Image src="/instagram.svg" alt="Instagram" width={35} height={0} />
         </a>
       </div>
     </nav>
