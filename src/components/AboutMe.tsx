@@ -86,7 +86,7 @@ export default function AboutMe() {
           transition={{ delay: 3.5, duration: 1, ease: 'easeOut' }}
           className="text-4xl font-black mb-4 text-black py-2 font-mono max-w-fit"
         >
-          Full-Stack Developer
+          Full-Stack Software Engineer
         </motion.h3>
         <motion.div
           initial={{ y: 0, opacity: 0 }}
@@ -99,9 +99,9 @@ export default function AboutMe() {
             onMouseEnter={scrambleP}
             className="pb-4 break-words whitespace-normal w-full max-w-full transition-[height] duration-500 ease-in-out leading-[1.6]"
           >
-            Hey! 👋 I build full-stack web applications that combine clean
+            Hey! 👋 I build full-stack applications that combine clean
             interfaces with robust, scalable backend systems and smart AI
-            integration. From crafting intuitive frontends to architecting
+            integration. From crafting intuitive UI/UXs to architecting
             efficient APIs and databases, I love creating seamless, end-to-end
             experiences that make complex tech feel simple, aesthetic and
             human-centered.
@@ -111,12 +111,12 @@ export default function AboutMe() {
             canyoning and caving — for the learning, teaching, problem-solving
             and team work involved. Like getting people outdoors,{' '}
             <span className="font-semibold">
-              I get excited from people using the applications I&#39;ve built
+              I get excited from people using the software I&#39;ve built
             </span>
             .
           </p>
           <p className="pb-1">
-            With digital marketing and communications experience{' '}
+            With digital marketing and community engagement experience{' '}
             <a
               href="https://eugeneyeo.myportfolio.com/"
               target="_blank"
@@ -125,8 +125,8 @@ export default function AboutMe() {
             >
               from another life
             </a>
-            , I bring a creative mindset, strong human skills, fast learning,
-            and sharp attention to detail to project collaborations.
+            , I bring a creative mindset, strong human skills, and a drive to
+            make a positive difference.
           </p>
         </motion.div>
 
