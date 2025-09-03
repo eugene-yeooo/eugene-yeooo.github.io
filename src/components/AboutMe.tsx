@@ -107,10 +107,9 @@ export default function AboutMe() {
             human-centered.
           </p>
           <p className="pb-4">
-            My drive for tech reflects my passion for technical rock climbing,
-            canyoning and caving - all pursuits that challenge me through
-            learning, teaching, problem-solving, and teamwork. Like getting
-            people outdoors,{' '}
+            My drive for tech reflects my passion for rock climbing, caving,
+            canyoning & alpinism: building growth through learning, teaching,
+            problem-solving and teamwork. Like getting people outdoors,{' '}
             <span className="font-semibold">
               I get excited from people using the software I&#39;ve built
             </span>
