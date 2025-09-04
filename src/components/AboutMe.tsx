@@ -125,8 +125,8 @@ export default function AboutMe() {
             >
               from another life
             </a>
-            , I bring a creative mindset, strong human skills, and a drive to
-            make meaningful impact.
+            , I bring a creative mindset, curiosity, strong human skills, and a
+            drive to make meaningful impact.
           </p>
         </motion.div>
 
